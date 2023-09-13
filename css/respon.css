@@ -1,0 +1,22 @@
+/* width : 1280 px */
+@media screen and (max-width : 1280px) {
+  .gday {height: 200px;}
+  
+}
+/* width : 720 px */
+@media screen and (max-width : 720px) {
+  .content, .Loading_anime {margin-right: 900px;}
+  .gday {height: 200px;}
+  
+}
+/* width : 480 px */
+@media screen and (max-width : 480px) {
+  .main_logo {margin-left: 25%;}
+  .content, .Loading_anime {margin-right: 900px;}
+  .gday {
+    height: 200px;
+    margin-top: 120px;
+  }
+  .content h2 a {margin-top: 20px;}
+  
+}

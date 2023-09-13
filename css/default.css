@@ -114,7 +114,7 @@ h1 {
 
 .content {
   display: none;
-  opacity:1;
+  opacity:1;  
 }
 
 
@@ -122,6 +122,11 @@ h1 {
 
 header {
   margin-top: 72px;
+}
+.main header {
+  margin-top: 0px;
+  padding-top: 72px;
+
 }
 
 
@@ -140,13 +145,15 @@ header {
 
 .display {
   width: 100%;
-  height: 797px;
+  height: 700px;
   background: #000;
+  margin-top: 72px;
 }
 
 img.gday {
   animation: wiggle 2s forwards;  
   transform-origin: 50% 100%;
+  height: 250px;
 }
 
 @keyframes wiggle {
@@ -189,25 +196,26 @@ img.gday {
   } 
 } 
 
+
+
 .controllerbtn {  
 
   text-indent: -999em;
-  margin-top: 432px;
+  padding-top: 432px;
   position: relative;
-  transform: translateY(-434px); 
 }
 
 .prev {
   width: 113px;
   height: 342px;
-  transform: translateX(-0%);
-  background: url(../image/prev.png);
+  transform: translateY(50%); 
+  background: url(../image/prev.png) no-repeat;
 }
 .next {
   width: 131px;
   height: 339px;
-  transform: translateX(0%);
-  background: url(../image/next.png);
+  transform: translateY(50%); 
+  background: url(../image/next.png) no-repeat;
 }
 
 .controllerbtn > h4 > a > p {
