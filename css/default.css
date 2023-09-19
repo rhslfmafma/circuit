@@ -148,6 +148,7 @@ header {
   height: 700px;
   background: #000;
   margin-top: 72px;
+  text-align: center;
 }
 
 img.gday {
@@ -223,4 +224,29 @@ img.gday {
   bottom:10%;
   left:20%;
   transform: translate(-50% -50%);
+}
+
+
+
+.content h1,h2,h3,h4,h5,h6, p {
+color: #fff;
+}
+
+.display h2:hover, .display p:hover {
+  animation: blink 0.5s step-end infinite;
+}
+
+.display div h2 {
+  padding-top: 30%;
+}
+
+.display div p {
+  padding-top: 170px;
+}
+
+
+/* 화면 전환 */
+
+.display02 {
+  display: none;
 }
