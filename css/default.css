@@ -247,6 +247,10 @@ color: #fff;
 
 /* 화면 전환 */
 
-.display02 {
-  display: none;
+.display02 {  
+  background: #fff;  
 }
+
+.display02 h1,h2,h3,h4,h5,h6, p {
+  color: #000;
+  }

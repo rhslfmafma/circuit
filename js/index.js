@@ -31,10 +31,46 @@ $(function() {
           $('.display01').css({
             display:'none'
           });
-          $('.display02').css({
-            display: 'block'
+          $('.display02').css({            
+            opacity: '1'
           })
         }
       });    
 
+      h1 {
+  font-size: 20px;
+  min-width:11px;
+  white-space: nowrap;
+  margin: 0;
+  position: fixed;
+  color: transparent;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+h1::before {
+  content: "Typing Effect with CSS";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  overflow: hidden;
+  border-right: 1px solid black;
+  animation: typing 5s steps(31) infinite;
+}
+
+@keyframes typing{
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
 });
