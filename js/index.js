@@ -25,19 +25,15 @@ $(function() {
 
 
     // 스페이스키 또는 엔터키 눌렸을 때 이벤트 핸들러
+    let display01 = $('.display01');
+    let display02 = $('.display02');
       $(document).keydown(function(e) {
+        console.log(e.keyCode);
         if (e.keyCode == 13 || e.keyCode == 32) { // 13은 엔터키, 32는 스페이스키
           // 페이지 이동 로직을 여기에 추가          
-          $('.display01').css({
-            display:'none'
-          });
-          $('.display02').css({            
-            opacity: '1'
-          })
+         display01.hide();
+         display02.show();
         }
       }); 
 
-
-
-      
-    });
+});

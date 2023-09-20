@@ -244,11 +244,19 @@ color: #fff;
   padding-top: 170px;
 }
 
+.display01 div h1,h2,h3,h4,h5,h6, p  {
+color: #fff !important;
+}
 
 /* 화면 전환 */
 
+.displaygroup {
+  flex: 1;
+}
+
 .display02 {  
   background: #fff;  
+  display: none;
 }
 
 .display02 h1,h2,h3,h4,h5,h6, p {
