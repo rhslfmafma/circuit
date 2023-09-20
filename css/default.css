@@ -19,10 +19,6 @@ a{
 }
 
 
-.blockspan {
-  display: block;
-}
-
 /* Rayout */
 .container {
   width: 1320PX;
@@ -300,7 +296,6 @@ color: #fff;
   font-weight: 400;
   line-height: 60px; /* 153.846% */
   text-transform:capitalize;
-
   text-align: left;  
 }
 
@@ -353,5 +348,7 @@ transform: translateX(-230px);
   padding-left: 10%;
   font-weight: bold;
   font-family: Play;
+  text-transform: uppercase;
+
 
 }
