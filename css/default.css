@@ -19,6 +19,9 @@ a{
 }
 
 
+.blockspan {
+  display: block;
+}
 
 /* Rayout */
 .container {
@@ -125,7 +128,7 @@ header {
 }
 .main header {
   margin-top: 0px;
-  padding-top: 72px;
+  padding-top: 30px;
 
 }
 
@@ -197,7 +200,9 @@ img.gday {
   } 
 } 
 
-
+.contoller {
+  margin-top:-20px;
+}
 
 .controllerbtn {  
 
@@ -228,7 +233,7 @@ img.gday {
 
 
 
-.content h1,h2,h3,h4,h5,h6, p {
+.content * {
 color: #fff;
 }
 
@@ -236,16 +241,16 @@ color: #fff;
   animation: blink 0.5s step-end infinite;
 }
 
-.display div h2 {
+.display01 div h2 {
   padding-top: 30%;
 }
 
-.display div p {
+.display01 div p {
   padding-top: 170px;
 }
 
-.display01 div h1,h2,h3,h4,h5,h6, p  {
-color: #fff !important;
+.display01 div *  {
+color: #fff;
 }
 
 /* 화면 전환 */
@@ -253,12 +258,78 @@ color: #fff !important;
 .displaygroup {
   flex: 1;
 }
-
-.display02 {  
-  background: #fff;  
-  display: none;
+.display01 {
+  color: #fff;
 }
 
-.display02 h1,h2,h3,h4,h5,h6, p {
+.whitedisplay {  
+  background: #fff;  
+  display: none;
   color: #000;
-  }
+  text-align: center;
+  position: relative;
+}
+
+.speach_buble {
+  width: 897px;
+  height: 189px;    
+  border-radius: 20px;
+  border: 11px solid #000;  
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+  gap:20px;
+  padding-left: 50px;
+}
+
+.speach_buble p {
+  color: #000;
+  font-family: Play;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 153.846% */
+  text-transform:capitalize;
+
+  text-align: left;  
+}
+
+.triangle {
+  transform: translateX(150px);
+}
+
+
+.whitedisplay .jefferey_dot {
+padding-top: 12%;
+transform: translateX(-230px);
+}
+
+.dropdowns  {
+  position: absolute;
+  top:30px;
+  right:30px;
+}
+
+.languagebtn::after {
+  content: 'language';
+}
+
+.dropdown-menu {
+ margin-left: -30px; 
+  border-radius: 20px;
+ border: 3px solid #000;   
+
+}
+
+.dropdown-item {
+  line-height:5px;
+  font-family: Play;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.flagicon {
+  padding-left: 30px;
+}
