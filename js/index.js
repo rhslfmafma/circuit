@@ -81,6 +81,41 @@ $(function() {
       }
     }
   })
+
+
+
+  // $.getJSON('파일경로', 할일);  
+
+  let  $allData = [];
+  function changeLang(lang){
+  $.getJSON(`./data/${lang}.json`, function(data){
+            $allData = data;
+            console.log($allData);
+
+            let menu = $('.nav li');
+            let tt1 = $allData[0].menu.title1;
+            menu.eq(0).find('a').text(tt1);
+
+        });
+       
+
+    }
+
+    changeLang('kor');
+
+    let btn = $('.lang');
+    
+    btn.click(function(){      
+    let target = $(this).attr('data-lang');
+    changeLang(target);
+    })
+
+   
+
+
+
+
+
 });
 
-//
+

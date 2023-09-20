@@ -1,27 +1,20 @@
 [
   {
-      "title": "INTRO"
-  },
-  {
-      "title": "HISTORY"
-  },
-  {
-    "title": "ABLE"
-  },
-  {
-    "title": "FUTURE"
+    "menu": {
+      "title1": "INTRO",
+      "title2": "HISTORY",
+      "title3": "ABLE",
+      "title4": "FUTURE"
+    }
   },  
   {
-    "title": "HI, IM JEFFEREY.<br>
-    THIS IS MY PORTFOLIO WEBSITE."
+    "title": "HI, IM JEFFEREY.<br>THIS IS MY PORTFOLIO WEBSITE."
   },
   {
-    "title": "The site concept is a 2D dot,<br>
-    I used my ability to make it."
+    "title": "The site concept is a 2D dot,<br>I used my ability to make it."
   },
   {
-    "title": "You can move the page <br>
-    by controlling the joystick"
+    "title": "You can move the page <br>by controlling the joystick"
   },
   {
     "title": "Do you want to know more about me?"
