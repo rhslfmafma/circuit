@@ -140,6 +140,7 @@ header {
   text-indent: -9999em;
   margin-top: 72px;
   margin: 0 auto;
+  transform: translateX(130px);
 }
 
 .nav {
@@ -148,7 +149,7 @@ header {
 }
 
 .nav li a {
-  font-size: 1em;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight:600;
 }
