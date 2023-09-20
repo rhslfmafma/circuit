@@ -20,11 +20,17 @@ $(function() {
   let display03 = $('.display03');
   let display04 = $('.display04');
   let display05 = $('.display05');
+  let display06 = $('.display06');
+  let display07 = $('.display07');
+  let display08 = $('.display08');
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
   let isDisplay03Hidden = true;
   let isDisplay04Hidden = true;
   let isDisplay05Hidden = true;
+  let isDisplay06Hidden = true;
+  let isDisplay07Hidden = true;
+  let isDisplay08Hidden = true;
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
@@ -54,8 +60,44 @@ $(function() {
           isDisplay04Hidden = true;
           isDisplay05Hidden = false;
       }
+      else if (!isDisplay05Hidden) {
+          display05.hide();
+          display06.show();
+          isDisplay05Hidden = true;
+          isDisplay06Hidden = false;
+      }
+      else if (!isDisplay06Hidden) {
+          display06.hide();
+          display07.show();
+          isDisplay06Hidden = true;
+          isDisplay07Hidden = false;
+      }
+      else if (!isDisplay07Hidden) {
+          display07.hide();
+          display08.show();
+          isDisplay07Hidden = true;
+          isDisplay08Hidden = false;
+      }      
     } else if (e.keyCode == 37) {
-      if (!isDisplay05Hidden) {
+      if (!isDisplay08Hidden) {
+        display08.hide();
+        display07.show();
+        isDisplay08Hidden = true;
+        isDisplay07Hidden = false;
+      } 
+      if (!isDisplay07Hidden) {
+        display07.hide();
+        display06.show();
+        isDisplay07Hidden = true;
+        isDisplay06Hidden = false;
+      } 
+      if (!isDisplay06Hidden) {
+        display06.hide();
+        display05.show();
+        isDisplay06Hidden = true;
+        isDisplay05Hidden = false;
+      } 
+      else if (!isDisplay05Hidden) {
         display05.hide();
         display04.show();
         isDisplay05Hidden = true;
@@ -104,6 +146,7 @@ $(function() {
             let tt3 = $allData[3].title;
             let tt4 = $allData[4].title;
             let tt5 = $allData[5].title;
+            let tt6 = $allData[6].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
@@ -114,7 +157,8 @@ $(function() {
             displayprompt.eq(2).find('.speach_buble p').html(tt2);
             displayprompt.eq(3).find('.speach_buble p').html(tt3);
             displayprompt.eq(4).find('.speach_buble p').html(tt4);
-
+            displayprompt.eq(5).find('.speach_buble p').html(tt5);
+            displayprompt.eq(6).find('.speach_buble p').html(tt6);
 
 
 
