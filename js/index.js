@@ -126,7 +126,7 @@ $(function() {
           isDisplay06Hidden = true;
           isDisplay07Hidden = false;
       } else {
-        $(window).location.href = '../history.html'; // Corrected this line
+        $(window).attr('location', '../history.html'); // Corrected this line
       }
         
     } else if (e.keyCode == 37) {
