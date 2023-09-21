@@ -80,12 +80,6 @@ $(function() {
           isDisplay07Hidden = true;
           isDisplay08Hidden = false;
       }    
-      else if (!isDisplay08Hidden) {
-          display08.hide();
-          display09.show();
-          isDisplay08Hidden = true;
-          isDisplay09Hidden = false;
-      }    
     } else if (e.keyCode == 37) {
       if (!isDisplay09Hidden) {
         display09.hide();

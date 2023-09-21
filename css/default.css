@@ -381,7 +381,7 @@ transform: translateX(-230px);
 
 
 .greydisplay  {    
-  display: none;  
+  display: block;  
   text-align: center;
   position: relative; 
   background: red;   
@@ -402,3 +402,37 @@ transform: translateX(-230px);
   0% {transform: translateX(-5px);}
   100% {transform: translateX(-500px);}
  } 
+
+
+.object {
+  background: blue ;
+  width: 244px;
+  height: 225px;
+  animation: objectmove 70s;  
+  position: relative;
+}
+
+.objecttxt {
+  position: absolute;
+  top: 50%;
+left: 50%;
+
+}
+
+.object h3 {
+color: #FDFDFD;
+font-family: Roboto;
+font-size: 50px;
+font-weight: 900;
+line-height: 100%; /* 86.49px */
+letter-spacing: 3.46px;
+
+transform: translate(-50%, -50%);
+white-space: no-wrap;
+}
+
+@keyframes objectmove {
+  0% {transform: translateX(1200px);}
+  100% {transform: translateX(-500px);}
+ } 
+
