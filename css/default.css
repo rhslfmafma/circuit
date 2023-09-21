@@ -253,6 +253,7 @@ color: #fff;
 
 .display01 div p {
   padding-top: 170px;
+  font-size: 20px;
 }
 
 .display01 div *  {
@@ -303,6 +304,7 @@ color: #fff;
   text-transform:capitalize;
   text-align: left;  
 }
+
 
 .triangle {
   transform: translateX(150px);
@@ -359,7 +361,7 @@ transform: translateX(-230px);
 
 /* history.html */
 .history .jefferey_dot {  
-  transform: translate(0px, 200px);
+  transform: translate(-60%, 200px);
   animation: jeffereymove 50s;  
 }
 

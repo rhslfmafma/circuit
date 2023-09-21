@@ -15,6 +15,58 @@ $(function() {
   })
 
   // 스페이스키 또는 엔터키 눌렸을 때 이벤트 핸들러
+  /* 슬라이드 내용 차용 */
+//   let display = $('.whitedisplay');
+//   let displayCount = display.length;//슬라이드 개수 
+//   let currentdisplayIdx = 0;
+
+//   function moveSlide(num){
+//     slideContainer.style.left = `${-num*100}%`;
+//     currentSlideIdx = num;
+//     console.log(currentSlideIdx);
+  
+//     if(currentdisplayIdx === displayCount -1){
+//       nextBtn.classList.add('disabled');
+//     } else{
+//       nextBtn.classList.remove('disabled');
+//     }
+//     //처음이면 이전버튼이 사라지고, 처음이 아니라면 다시보이도록
+//     if(currentdisplayIdx === 0){
+//       prevBtn.classList.add('disabled');
+//     } else{
+//       prevBtn.classList.remove('disabled');
+//     }
+//     //모든슬라이드에서 active를 제거하고, 지금 보고 있는 슬라이드에 active를 추가
+//     for(let sl of slides){
+//       sl.classList.remove('active');
+//     }
+//     slides[currentSlideIdx].classList.add('active');
+//     //모든 페이저에서 active를 제거하고, 현재 슬라이드번호의 pager에 active 추가
+//     for(let pb of pagerBtn){
+//       pb.classList.remove('active');
+//     }
+//     pagerBtn[currentdisplayIdx].classList.add('active');  
+  
+//      //moveslide
+// moveSlide(0);
+
+// nextBtn.addEventListener('click',()=>{
+//   //마지막이 아니라면
+//   if(currentSlideIdx < slideCount -1){
+//     moveSlide(currentSlideIdx + 1);
+//   }
+// });
+// //이전 버튼을 클릭하면 할일, 처음이 아니라면
+// prevBtn.addEventListener('click',()=>{
+
+//   if(currentSlideIdx > 0){
+//     moveSlide(currentSlideIdx - 1);
+//   }
+// });
+//   }
+
+  
+
   let display01 = $('.display01');
   let display02 = $('.display02');
   let display03 = $('.display03');
@@ -73,13 +125,10 @@ $(function() {
           display07.show();
           isDisplay06Hidden = true;
           isDisplay07Hidden = false;
+      } else {
+        $(window).location.href = '../history.html'; // Corrected this line
       }
-      else if (!isDisplay07Hidden) {
-          display07.hide();
-          display08.show();
-          isDisplay07Hidden = true;
-          isDisplay08Hidden = false;
-      }    
+        
     } else if (e.keyCode == 37) {
       if (!isDisplay09Hidden) {
         display09.hide();
@@ -122,13 +171,7 @@ $(function() {
         display02.show();
         isDisplay03Hidden = true;
         isDisplay02Hidden = false;
-      }
-      else if (!isDisplay02Hidden) {
-        display02.hide();
-        display01.show();
-        isDisplay02Hidden = true;
-        isDisplay01Hidden = false;
-      }
+      }      
     }
   })
 
@@ -149,9 +192,9 @@ $(function() {
             let displayprompt = $('.whitedisplay');
             let tt1 = $allData[1].title;
             let tt2 = $allData[2].title;
+            let tt3 = $allData[3].title;
             console.log(tt1);
 
-            let tt3 = $allData[3].title;
             let tt4 = $allData[4].title;
             let tt5 = $allData[5].title;
             let tt6 = $allData[6].title;
@@ -161,12 +204,13 @@ $(function() {
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displayprompt.eq(1).find('.speach_buble p').html(tt1);
-            displayprompt.eq(2).find('.speach_buble p').html(tt2);
-            displayprompt.eq(3).find('.speach_buble p').html(tt3);
-            displayprompt.eq(4).find('.speach_buble p').html(tt4);
-            displayprompt.eq(5).find('.speach_buble p').html(tt5);
-            displayprompt.eq(6).find('.speach_buble p').html(tt6);
+            displayprompt.eq(0).find('.speach_buble p').html(tt1);
+            displayprompt.eq(1).find('.speach_buble p').html(tt2);
+            displayprompt.eq(2).find('.speach_buble p').html(tt3);
+            displayprompt.eq(3).find('.speach_buble p').html(tt4);
+            displayprompt.eq(4).find('.speach_buble p').html(tt5);
+            displayprompt.eq(5).find('.speach_buble p').html(tt6);
+            
 
 
 
