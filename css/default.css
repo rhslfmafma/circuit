@@ -514,5 +514,9 @@ white-space: nowrap;
 
 .history .speach_buble {
   position: fixed;
-  
+  top:65%;
+  left:50%;
+  z-index: 99;
+  border-radius: 20px;
+  background: #fff !important;  
 }
