@@ -386,7 +386,7 @@ transform: translateX(-230px);
   display: block;  
   text-align: center;
   position: relative; 
-  background: red;   
+  background:transparent;   
   width: 1052px;
   height: 700px;
   overflow: hidden;
@@ -416,53 +416,65 @@ transform: translateX(-230px);
 .object_01 {
   background: #B284EC ;   
   transform: translateX(1500px);
+
   
 }
 .object_02 {
   background: #BEEC84 ;
   transform: translateX(1500px);
+
 }
 .object_03 {
   background: #ECB684 ;
   transform: translateX(1500px);
+
 }
 .object_04 {
   background: #ECB684 ;
   transform: translateX(1500px);
+
 }
 .object_05 {
   background: #84AEEC ;
   transform: translateX(1500px);
+
 }
 .object_06 {
   background: #ECB684 ;
   transform: translateX(1500px);
+
 }
 .object_07 {
   background: #EC84C2 ;
   transform: translateX(1500px);
+
 }
 .object_08 {
   background: #ECB684 ;
   transform: translateX(1500px);
+
 
 }
 .object_09 {
   background: #ECB684 ;
   transform: translateX(1500px);
 
+
 }
 .object_10 {
   background: #B284EC ;
   transform: translateX(1500px);
+
 }
 .object_11 {
   background: #ECB684 ;
   transform: translateX(1500px);
+
 }
 .object_12 {
   background: #EC84C2 ;
   transform: translateX(1500px);
+
 }
 
 .objecttxt {

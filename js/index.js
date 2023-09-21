@@ -230,47 +230,21 @@ $(function() {
 
 /* histroy.html */
 
-let object_01 = $('.object_01');
-let object_02 = $('.object_02');
-let object_03 = $('.object_03');
-let object_04 = $('.object_04');
-let object_05 = $('.object_05');
-let object_06 = $('.object_06');
-let object_07 = $('.object_07');
-let object_08 = $('.object_08');
-let object_09 = $('.object_09');
-let object_10 = $('.object_10');
-let object_11 = $('.object_11');
-let object_12 = $('.object_12');
-let translateX = -10;    
+let objects = [];
+for (let i =1; i<12; i++) {
+  objects.push($('.object_'+(i<10 ? '0' + i : i)));
+}
 
 $(document).keydown(function(e) {
   console.log(e.keyCode);        
   if (e.keyCode == 40 ) { // 40은 아래쪽 방향키
   // 페이지 이동 로직을 여기에 추가    
-  translateX-=10;
-  
-  object_01.css({'transform':`translateX(${translateX * 1}px)`});
-  if (translateX <= -50) { // translateX가 -2000 이하일 때
-    let translateX_02 = translateX + 500; // object_02에 적용할 translateX 계산
-    object_02.css({'transform':`translateX(${translateX_02 * 1}px)`});
+  objects.forEach((object, index) => {
+    let translateX = parseInt($(object).css('transform').split(',')[4].trim()) - (40 + index * 400);
+    $(object).css({'transform' : 'translateX(' + translateX + 'px)'});
+  });
   }
-  if (translateX_02 <= -50) { // translateX가 -2000 이하일 때
-    let translateX_03 = translateX + 500; // object_02에 적용할 translateX 계산
-    object_03.css({'transform':`translateX(${translateX_03 * 1}px)`});
-  }
-  if (translateX_03 <= -50) { // translateX가 -2000 이하일 때
-    let translateX_04 = translateX + 500; // object_02에 적용할 translateX 계산
-    object_04.css({'transform':`translateX(${translateX_04 * 1}px)`});
-  }
-  if (translateX_04 <= -50) { // translateX가 -2000 이하일 때
-    let translateX_05 = translateX + 500; // object_02에 적용할 translateX 계산
-    object_05.css({'transform':`translateX(${translateX_05 * 1}px)`});
-  }
-  } 
-})
-
-
+});  
 
 
 });
