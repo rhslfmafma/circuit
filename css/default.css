@@ -406,18 +406,32 @@ transform: translateX(-230px);
  } 
 
 
-.object {
+.object_01 {
   background: blue ;
   width: 244px;
   height: 225px;
-  animation: objectmove 70s;  
+  animation: objectmove 18s ;  
+  position: relative;
+}
+.object_02 {
+  background: red ;
+  width: 244px;
+  height: 225px;
+  animation: objectmove 30s;  
+  position: relative;
+}
+.object_03 {
+  background: pink ;
+  width: 244px;
+  height: 225px;
+  animation: objectmove 52s;  
   position: relative;
 }
 
 .objecttxt {
   position: absolute;
   top: 50%;
-left: 50%;
+  left: 50%;
 
 }
 
@@ -435,6 +449,6 @@ white-space: no-wrap;
 
 @keyframes objectmove {
   0% {transform: translateX(1200px);}
-  100% {transform: translateX(-500px);}
+  100% {transform: translateX(-1200px);}
  } 
 
