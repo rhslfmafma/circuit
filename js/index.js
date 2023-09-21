@@ -23,6 +23,7 @@ $(function() {
   let display06 = $('.display06');
   let display07 = $('.display07');
   let display08 = $('.display08');
+  let display09 = $('.display09');
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
   let isDisplay03Hidden = true;
@@ -31,6 +32,7 @@ $(function() {
   let isDisplay06Hidden = true;
   let isDisplay07Hidden = true;
   let isDisplay08Hidden = true;
+  let isDisplay09Hidden = true;
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
@@ -77,21 +79,33 @@ $(function() {
           display08.show();
           isDisplay07Hidden = true;
           isDisplay08Hidden = false;
-      }      
+      }    
+      else if (!isDisplay08Hidden) {
+          display08.hide();
+          display09.show();
+          isDisplay08Hidden = true;
+          isDisplay09Hidden = false;
+      }    
     } else if (e.keyCode == 37) {
-      if (!isDisplay08Hidden) {
+      if (!isDisplay09Hidden) {
+        display09.hide();
+        display08.show();
+        isDisplay09Hidden = true;
+        isDisplay08Hidden = false;
+      } 
+      else if (!isDisplay08Hidden) {
         display08.hide();
         display07.show();
         isDisplay08Hidden = true;
         isDisplay07Hidden = false;
       } 
-      if (!isDisplay07Hidden) {
+      else if (!isDisplay07Hidden) {
         display07.hide();
         display06.show();
         isDisplay07Hidden = true;
         isDisplay06Hidden = false;
       } 
-      if (!isDisplay06Hidden) {
+      else if (!isDisplay06Hidden) {
         display06.hide();
         display05.show();
         isDisplay06Hidden = true;
