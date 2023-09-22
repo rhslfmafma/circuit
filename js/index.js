@@ -39,12 +39,12 @@ $(function() {
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displayprompt.find('p').eq(1).html(tt1);
-            displayprompt.find('p').eq(2).html(tt2);
-            displayprompt.find('p').eq(3).html(tt3);
-            displayprompt.find('p').eq(4).html(tt4);
-            displayprompt.find('p').eq(5).html(tt5);
-            displayprompt.find('p').eq(6).html(tt6);
+            displayprompt.find('p').eq(0).html(tt1);
+            displayprompt.find('p').eq(1).html(tt2);
+            displayprompt.find('p').eq(2).html(tt3);
+            displayprompt.find('p').eq(3).html(tt4);
+            displayprompt.find('p').eq(4).html(tt5);
+            displayprompt.find('p').eq(5).html(tt6);
             
 
 
