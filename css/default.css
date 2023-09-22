@@ -281,7 +281,20 @@ color: #fff;
 }
 
 .speach_bubble {
-  width: 897px;
+  width: 89%;
+  height: 189px;    
+  border-radius: 20px;
+  border: 11px solid #000;  
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+  gap:20px;
+  padding-left: 50px;
+}
+.history .speach_bubble {
+  width: 890px;
   height: 189px;    
   border-radius: 20px;
   border: 11px solid #000;  

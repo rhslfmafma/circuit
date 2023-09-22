@@ -186,8 +186,6 @@ $(document).keydown(function(e) {
   }
 });  
 
-});
-
 
   //언어버튼 클릭 시 드롭다운 슬라이드 다운
   let languagebtn = $('.languagebtn');
@@ -204,24 +202,12 @@ speach_bubble.click(function(){
   $(this).find(p).eq(1).show();
   
 })
+  /* intro.html */
+  let jefferey_dot_red = $('.jefferey_dot');
+  let tenel = $('.tenel');
 
-
-/* intro.html */
-
-let jefferey_dot_red = $('.jefferey_dot');
-let tenel = $('.tenel');
-
- setTimeout(function(){    
+  setTimeout(function(){    
     tenel.show();
-    jefferey_dot_red.show();},
-  3000);
-
-
-  /* future.html */
-
-
-$('.slide_item').slick({
-  dots:true,
-  arrows:true
+    jefferey_dot_red.show();
+  }, 3000);
 });
-
