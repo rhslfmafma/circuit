@@ -45,12 +45,7 @@ $(function() {
             displaypromptred.find('.txtgroup span').eq(6).html(tt13);
             displaypromptred.find('.txtgroup span').eq(7).html(tt14);
             displaypromptred.find('.txtgroup span').eq(8).html(tt15);
-            displaypromptred.find('.txtgroup span').eq(9).html(tt16);
-            displaypromptred.find('.txtgroup span').eq(10).html(tt17);
-            displaypromptred.find('.txtgroup span').eq(11).html(tt18);
-            displaypromptred.find('.txtgroup span').eq(12).html(tt19);
-            displaypromptred.find('.txtgroup span').eq(12).html(tt20);
-            
+            displaypromptred.find('.txtgroup span').eq(9).html(tt16);      
             
 
 

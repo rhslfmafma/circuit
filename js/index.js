@@ -6,14 +6,10 @@ $(function() {
   3000);
 
   
-
   let display01 = $('.display01');
   let display02 = $('.display02');
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
-  
-
-
 
 
   // $.getJSON('파일경로', 할일);  
@@ -28,8 +24,7 @@ $(function() {
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
 
-            let displayprompt = $('.index_main whitedisplay');
-            let speach_bubble = $('.speach_bubble');
+            let displayprompt = $('.whitedisplay .speach_bubble');
             let tt1 = $allData[1].title;
             let tt2 = $allData[2].title;
             let tt3 = $allData[3].title;
@@ -44,12 +39,13 @@ $(function() {
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            speach_bubble.find('p').eq(0).html(tt1);
-            speach_bubble.find('p').eq(1).html(tt2);
-            speach_bubble.find('p').eq(2).html(tt3);
-            speach_bubble.find('p').eq(3).html(tt4);
-            speach_bubble.find('p').eq(4).html(tt5);
-            speach_bubble.find('p').eq(5).html(tt6);            
+            displayprompt.find('p').eq(1).html(tt1);
+            displayprompt.find('p').eq(2).html(tt2);
+            displayprompt.find('p').eq(3).html(tt3);
+            displayprompt.find('p').eq(4).html(tt4);
+            displayprompt.find('p').eq(5).html(tt5);
+            displayprompt.find('p').eq(6).html(tt6);
+            
 
 
 
@@ -66,6 +62,22 @@ $(function() {
     })
 
    
+    //언어버튼 클릭 시 드롭다운 슬라이드 다운
+  let languagebtn = $('.languagebtn');
+  let dropdownMenu = $('.dropdown-menu');
+
+  languagebtn.click(function(){
+    dropdownMenu.slideToggle();
+  })
+
+let speach_bubble = $('.history .speach_bubble ');
+
+speach_bubble.click(function(){
+  $(this).find(p).eq(0).hide();
+  $(this).find(p).eq(1).show();
+  
+})
+
     /* index_main.html 디벨롭 */
 
     let speach_bubble_slide = $('.speach_bubble_slide p');
@@ -88,6 +100,7 @@ $(function() {
               showbubble(currentIdx);
             }
             else if (currentIdx < 5) {
+              console.log(currentIdx);
             showbubble(++currentIdx);
             }
             else {

@@ -600,6 +600,7 @@ white-space: nowrap;
   background: red;
   margin-top: 72px;
   text-align: center;
+  position: relative;
   
 }
 
@@ -608,7 +609,7 @@ white-space: nowrap;
   margin-left: -60%;
   margin-top: 45%;
   animation: uptenel 1s;
-  transform-origin: center bottom;
+  transform-origin: center bottom;  
 }
 
 @keyframes uptenel {
