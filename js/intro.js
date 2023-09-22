@@ -30,6 +30,9 @@ $(function() {
             let tt14 = $allData[14].title;
             let tt15 = $allData[15].title;
             let tt16 = $allData[16].title;
+            let tt17 = $allData[17].title;
+            let tt18 = $allData[18].title;
+            let tt19 = $allData[19].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
@@ -46,6 +49,9 @@ $(function() {
             displaypromptred.find('.txtgroup span').eq(7).html(tt14);
             displaypromptred.find('.txtgroup span').eq(8).html(tt15);
             displaypromptred.find('.txtgroup span').eq(9).html(tt16);      
+            displaypromptred.find('.txtgroup span').eq(10).html(tt17);      
+            displaypromptred.find('.txtgroup span').eq(11).html(tt18);      
+            displaypromptred.find('.txtgroup span').eq(12).html(tt19);      
             
 
 
@@ -62,8 +68,8 @@ $(function() {
     changeLang(target);
     })
 
-   
-  //언어버튼 클릭 시 드롭다운 슬라이드 다운
+
+      //언어버튼 클릭 시 드롭다운 슬라이드 다운
   let languagebtn = $('.languagebtn');
   let dropdownMenu = $('.dropdown-menu');
 
@@ -71,13 +77,16 @@ $(function() {
     dropdownMenu.slideToggle();
   })
 
-let speach_bubble = $('.history .speach_bubble ');
+  console.log(dropdownMenu);
+
+let speach_bubble = $('.intro .speach_bubble ');
 
 speach_bubble.click(function(){
   $(this).find(p).eq(0).hide();
   $(this).find(p).eq(1).show();
   
 })
+
   /* intro.html */
   let jefferey_dot_red = $('.jefferey_dot');
   let tenel = $('.tenel');

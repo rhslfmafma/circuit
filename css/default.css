@@ -591,8 +591,7 @@ white-space: nowrap;
 /* intro.html */
 
 .displaygroup .intro {
-  overflow: hidden; 
-  z-index: -1;
+  overflow: hidden;   
 }
 
 .reddisplay  {    
