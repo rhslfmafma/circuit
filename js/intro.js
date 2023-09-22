@@ -167,26 +167,6 @@ $(function() {
     })
 
    
-
-/* histroy.html */
-
-let objects = [];
-for (let i =1; i<12; i++) {
-  objects.push($('.object_'+(i<10 ? '0' + i : i)));
-}
-
-$(document).keydown(function(e) {
-  console.log(e.keyCode);        
-  if (e.keyCode == 40 ) { // 40은 아래쪽 방향키
-  // 페이지 이동 로직을 여기에 추가    
-  objects.forEach((object, index) => {
-    let translateX = parseInt($(object).css('transform').split(',')[4].trim()) - (40 + index * 400);
-    $(object).css({'transform' : 'translateX(' + translateX + 'px)'});
-  });
-  }
-});  
-
-
   //언어버튼 클릭 시 드롭다운 슬라이드 다운
   let languagebtn = $('.languagebtn');
   let dropdownMenu = $('.dropdown-menu');
@@ -209,5 +189,5 @@ speach_bubble.click(function(){
   setTimeout(function(){    
     tenel.show();
     jefferey_dot_red.show();
-  }, 3000);
+  }, 1500);
 });

@@ -620,7 +620,7 @@ white-space: nowrap;
 .reddisplay .jefferey_dot {
 position: absolute;
 bottom: 40%;
-left:27%;
+left:30%;
 display: none;
 }
 @keyframes upjefferey {
