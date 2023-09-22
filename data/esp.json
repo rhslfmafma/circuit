@@ -26,24 +26,45 @@
     "title": "Bien, pasemos al menú de presente."
   },
   {
-    "title": "Nombre : Andreas(♂)"
+    "title": "Nombre : "
   }, 
   {
-    "title": "años : 29 años (Nacido en 1994)"
+    "title": "Andreas(♂)"
   }, 
   {
-    "title": "teléfono : +82 010 - 9159 -9879"
+    "title": "años : "
+  }, 
+  {
+    "title": "29 años (Nacido en 1994)"
+  }, 
+  {
+    "title": "teléfono : "
   },
   {
-    "title": "Toda la carrera : 7 años"
+    "title": "+82 010 - 9159 -9879"
+  },
+  {
+    "title": "Toda la carrera : "
+  },
+  {
+    "title": "7 años"
   },  
   {
-    "title": "habafición : Escuchar música en YouTube, operar un canal de redes sociales"
+    "title": "habafición : "
+  },  
+  {
+    "title": "Escuchar música en YouTube, operar un canal de redes sociales"
   }, 
   {
-    "title": "carácter : Me apasiona todo."
+    "title": "carácter : "
   }, 
   {
-    "title": "MBTI : ENFP"
+    "title": "Me apasiona todo."
+  }, 
+  {
+    "title": "MBTI : "
+  },
+  {
+    "title": "ENFP"
   }
 ]

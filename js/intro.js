@@ -42,6 +42,13 @@ $(function() {
             let tt11 = $allData[11].title;
             let tt12 = $allData[12].title;
             let tt13 = $allData[13].title;
+            let tt14 = $allData[14].title;
+            let tt15 = $allData[15].title;
+            let tt16 = $allData[16].title;
+            let tt17 = $allData[17].title;
+            let tt18 = $allData[18].title;
+            let tt19 = $allData[19].title;
+            let tt20 = $allData[20].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
@@ -55,6 +62,13 @@ $(function() {
             displaypromptred.find('span').eq(4).html(tt11);
             displaypromptred.find('span').eq(5).html(tt12);
             displaypromptred.find('span').eq(6).html(tt13); 
+            displaypromptred.find('span').eq(7).html(tt14); 
+            displaypromptred.find('span').eq(8).html(tt15); 
+            displaypromptred.find('span').eq(9).html(tt16); 
+            displaypromptred.find('span').eq(10).html(tt17); 
+            displaypromptred.find('span').eq(11).html(tt18); 
+            displaypromptred.find('span').eq(12).html(tt19); 
+            displaypromptred.find('span').eq(13).html(tt20); 
             
           // 타이핑 애니메이션 실행
           function typeText($element, text) {
