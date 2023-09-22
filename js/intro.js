@@ -85,5 +85,5 @@ speach_bubble.click(function(){
   setTimeout(function(){    
     tenel.show();
     jefferey_dot_red.show();
-  }, 1500);
+  }, 700);
 });
