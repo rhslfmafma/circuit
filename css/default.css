@@ -329,7 +329,51 @@ color: #fff;
 .whitedisplay .jefferey_dot {
 padding-top: 12%;
 transform: translateX(-230px);
+animation: justwiggle 2s forwards;  
+display: none;
 }
+
+
+@keyframes justwiggle {
+  0% {
+    transform: scale(0);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+  25% {  
+    opacity: 0.5;
+  }
+  27% {transform: scale(0.6);}
+  29% {transform: scale(0.4);
+    animation-timing-function: ease-in;
+
+  }
+  50% {
+    transform: scale(0.2);
+    transform: translateY(30px);
+  } 
+  60% {
+    transform: scale(0.2);
+    transform: translateY(0px);
+  }
+  70% {
+    transform: scale(0);
+    transform: translateY(20px);
+  } 
+  80% {
+    transform: scale(0);
+    transform: translateY(0px);
+  } 
+  90% {
+    transform: scale(0);
+    transform: translateY(10px);
+  } 
+  100% {
+    transform: scale(0);
+    transform: translateY(0px);
+  } 
+} 
+
 
 .dropdowns  {
   position: absolute;

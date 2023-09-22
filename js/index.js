@@ -10,7 +10,7 @@ $(function() {
   let display02 = $('.display02');
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
-
+  let jefferey = $('.jefferey_dot')
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -99,12 +99,16 @@ speach_bubble.click(function(){
               isDisplay02Hidden = false;
               showbubble(currentIdx);
             }
+            else if (currentIdx == 1 ) {
+              showbubble(++currentIdx);
+              jefferey.show();
+              }
             else if (currentIdx < 5) {
               console.log(currentIdx);
             showbubble(++currentIdx);
-            }
-            else {
-              $(window).attr('location', '../intro.html'); // Corrected this line
+            } 
+            else if ( currentIdx == 5 ) {
+             $(window).attr('location', '../intro.html'); // Corrected this line
             }
           }
         if (e.keyCode == 37) {
