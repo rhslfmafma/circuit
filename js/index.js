@@ -126,7 +126,7 @@ $(function() {
           isDisplay06Hidden = true;
           isDisplay07Hidden = false;
       } else {
-        $(window).attr('location', '../history.html'); // Corrected this line
+        $(window).attr('location', '../intro.html'); // Corrected this line
       }
         
     } else if (e.keyCode == 37) {
@@ -204,12 +204,12 @@ $(function() {
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displayprompt.eq(0).find('.speach_buble p').html(tt1);
-            displayprompt.eq(1).find('.speach_buble p').html(tt2);
-            displayprompt.eq(2).find('.speach_buble p').html(tt3);
-            displayprompt.eq(3).find('.speach_buble p').html(tt4);
-            displayprompt.eq(4).find('.speach_buble p').html(tt5);
-            displayprompt.eq(5).find('.speach_buble p').html(tt6);
+            displayprompt.eq(0).find('.speach_bubble p').html(tt1);
+            displayprompt.eq(1).find('.speach_bubble p').html(tt2);
+            displayprompt.eq(2).find('.speach_bubble p').html(tt3);
+            displayprompt.eq(3).find('.speach_bubble p').html(tt4);
+            displayprompt.eq(4).find('.speach_bubble p').html(tt5);
+            displayprompt.eq(5).find('.speach_bubble p').html(tt6);
             
 
 
@@ -245,8 +245,32 @@ $(document).keydown(function(e) {
   });
   }
 });  
-
-
 });
 
+let speach_bubble = $('.history .speach_bubble ');
 
+speach_bubble.click(function(){
+  $(this).find(p).eq(0).hide();
+  $(this).find(p).eq(1).show();
+  
+})
+
+
+/* intro.html */
+
+let jefferey_dot_red = $('.jefferey_dot');
+let tenel = $('.tenel');
+
+ setTimeout(function(){    
+    tenel.show();
+    jefferey_dot_red.show();},
+  3000);
+
+
+  /* future.html */
+
+
+$('.slide_item').slick({
+  dots:true,
+  arrows:true
+});
