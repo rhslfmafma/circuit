@@ -7,116 +7,6 @@ $(function() {
 
   
 
-  let display01 = $('.display01');
-  let display02 = $('.display02');
-  let display03 = $('.display03');
-  let display04 = $('.display04');
-  let display05 = $('.display05');
-  let display06 = $('.display06');
-  let display07 = $('.display07');
-  let display08 = $('.display08');
-  let display09 = $('.display09');
-  let isDisplay01Hidden = false;
-  let isDisplay02Hidden = true;
-  let isDisplay03Hidden = true;
-  let isDisplay04Hidden = true;
-  let isDisplay05Hidden = true;
-  let isDisplay06Hidden = true;
-  let isDisplay07Hidden = true;
-  let isDisplay08Hidden = true;
-  let isDisplay09Hidden = true;
-  
-  $(document).keydown(function(e) {
-    console.log(e.keyCode);        
-    if (e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 39) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
-    // 페이지 이동 로직을 여기에 추가          
-      if (!isDisplay01Hidden) {
-        display01.hide();
-        display02.show();
-        isDisplay01Hidden = true;
-        isDisplay02Hidden = false;
-      }
-      else if (!isDisplay02Hidden) {
-          display02.hide();
-          display03.show();
-          isDisplay02Hidden = true;
-          isDisplay03Hidden = false;
-      }
-      else if (!isDisplay03Hidden) {
-          display03.hide();
-          display04.show();
-          isDisplay03Hidden = true;
-          isDisplay04Hidden = false;
-      }
-      else if (!isDisplay04Hidden) {
-          display04.hide();
-          display05.show();
-          isDisplay04Hidden = true;
-          isDisplay05Hidden = false;
-      }
-      else if (!isDisplay05Hidden) {
-          display05.hide();
-          display06.show();
-          isDisplay05Hidden = true;
-          isDisplay06Hidden = false;
-      }
-      else if (!isDisplay06Hidden) {
-          display06.hide();
-          display07.show();
-          isDisplay06Hidden = true;
-          isDisplay07Hidden = false;
-      } else {
-        $(window).attr('location', '../intro.html'); // Corrected this line
-      }
-        
-    } else if (e.keyCode == 37) {
-      if (!isDisplay09Hidden) {
-        display09.hide();
-        display08.show();
-        isDisplay09Hidden = true;
-        isDisplay08Hidden = false;
-      } 
-      else if (!isDisplay08Hidden) {
-        display08.hide();
-        display07.show();
-        isDisplay08Hidden = true;
-        isDisplay07Hidden = false;
-      } 
-      else if (!isDisplay07Hidden) {
-        display07.hide();
-        display06.show();
-        isDisplay07Hidden = true;
-        isDisplay06Hidden = false;
-      } 
-      else if (!isDisplay06Hidden) {
-        display06.hide();
-        display05.show();
-        isDisplay06Hidden = true;
-        isDisplay05Hidden = false;
-      } 
-      else if (!isDisplay05Hidden) {
-        display05.hide();
-        display04.show();
-        isDisplay05Hidden = true;
-        isDisplay04Hidden = false;
-      } 
-      else if (!isDisplay04Hidden) {
-        display04.hide();
-        display03.show();
-        isDisplay04Hidden = true;
-        isDisplay03Hidden = false;
-      }
-      else if (!isDisplay03Hidden) {
-        display03.hide();
-        display02.show();
-        isDisplay03Hidden = true;
-        isDisplay02Hidden = false;
-      }      
-    }
-  })
-
-
-
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
   function changeLang(lang){
@@ -129,27 +19,38 @@ $(function() {
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
 
-            let displayprompt = $('.whitedisplay');
-            let tt1 = $allData[1].title;
-            let tt2 = $allData[2].title;
-            let tt3 = $allData[3].title;
-            console.log(tt1);
-
-            let tt4 = $allData[4].title;
-            let tt5 = $allData[5].title;
-            let tt6 = $allData[6].title;
+            let displaypromptred = $('.intro .reddisplay');            
+            let tt7 = $allData[7].title;
+            let tt8 = $allData[8].title;
+            let tt9 = $allData[9].title;
+            let tt10 = $allData[10].title;
+            let tt11 = $allData[11].title;
+            let tt12 = $allData[12].title;
+            let tt13 = $allData[13].title;
+            let tt14 = $allData[14].title;
+            let tt15 = $allData[15].title;
+            let tt16 = $allData[16].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displayprompt.eq(0).find('.speach_bubble p').html(tt1);
-            displayprompt.eq(1).find('.speach_bubble p').html(tt2);
-            displayprompt.eq(2).find('.speach_bubble p').html(tt3);
-            displayprompt.eq(3).find('.speach_bubble p').html(tt4);
-            displayprompt.eq(4).find('.speach_bubble p').html(tt5);
-            displayprompt.eq(5).find('.speach_bubble p').html(tt6);
+            displaypromptred.find('.txtgroup span').eq(0).html(tt7);
+            displaypromptred.find('.txtgroup span').eq(1).html(tt8);
+            displaypromptred.find('.txtgroup span').eq(2).html(tt9);
+            displaypromptred.find('.txtgroup span').eq(3).html(tt10);
+            displaypromptred.find('.txtgroup span').eq(4).html(tt11);
+            displaypromptred.find('.txtgroup span').eq(5).html(tt12);
+            displaypromptred.find('.txtgroup span').eq(6).html(tt13);
+            displaypromptred.find('.txtgroup span').eq(7).html(tt14);
+            displaypromptred.find('.txtgroup span').eq(8).html(tt15);
+            displaypromptred.find('.txtgroup span').eq(9).html(tt16);
+            displaypromptred.find('.txtgroup span').eq(10).html(tt17);
+            displaypromptred.find('.txtgroup span').eq(11).html(tt18);
+            displaypromptred.find('.txtgroup span').eq(12).html(tt19);
+            displaypromptred.find('.txtgroup span').eq(12).html(tt20);
+            
             
 
 

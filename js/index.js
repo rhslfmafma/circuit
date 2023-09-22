@@ -28,7 +28,7 @@ $(function() {
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
 
-            let displayprompt = $('.whitedisplay');
+            let displayprompt = $('.index_main whitedisplay');
             let speach_bubble = $('.speach_bubble');
             let tt1 = $allData[1].title;
             let tt2 = $allData[2].title;

@@ -58,6 +58,7 @@ $(function() {
 
   /* future.html */
 
-
+  let slide =$('.slide_wrapper');
+  slide.slick();
 
 });
