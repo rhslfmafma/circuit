@@ -43,8 +43,7 @@ h1 {
   margin-bottom: 0px;
 }
 .main h1 {  
-  margin-top: 0px;
-  
+  margin-top: 0px;  
 }
 
 
@@ -320,7 +319,9 @@ color: #fff;
 
 
 .triangle {
-  transform: translate(360px,-30px);
+  position: absolute;
+  right: 3%;
+  top: 50%;
 }
 
 
@@ -370,6 +371,21 @@ transform: translateX(-230px);
   font-family: Play;
   text-transform: uppercase;
 }
+
+
+/* index_main.html 디벨롭 */
+
+.speach_bubble_slide {
+  display: none;
+}
+
+
+.active {
+  display: block;
+}
+
+
+
 
 
 /* history.html */
@@ -533,6 +549,13 @@ white-space: nowrap;
   border-radius: 20px;
   background: #fff !important;  
 }
+
+
+
+
+
+
+
 
 
 /* able.html */
