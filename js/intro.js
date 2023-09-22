@@ -1,11 +1,26 @@
 $(function() {  
-  //로딩애니메이션이 3초간 있다가 바로 콘텐츠가 나오게 하되, 로딩애니메이션은 
-  setTimeout(function(){    
-    $('.Loading_anime').hide();
-    $('.content').show();},
-  3000);
+ 
 
+      //언어버튼 클릭 시 드롭다운 슬라이드 다운
+      let languagebtn = $('.languagebtn');
+      let dropdownMenu = $('.dropdown-menu');
+    
+      languagebtn.click(function(){
+        dropdownMenu.slideToggle();
+      })
+    
+      console.log(dropdownMenu);
+    
+    let speach_bubble = $('.intro .speach_bubble ');
+    
+    speach_bubble.click(function(){
+      $(this).find(p).eq(0).hide();
+      $(this).find(p).eq(1).show();
+      
+    })
   
+
+   
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -19,7 +34,7 @@ $(function() {
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
 
-            let displaypromptred = $('.intro .reddisplay');            
+            let displaypromptred = $('.intro .txtgroup');            
             let tt7 = $allData[7].title;
             let tt8 = $allData[8].title;
             let tt9 = $allData[9].title;
@@ -27,39 +42,44 @@ $(function() {
             let tt11 = $allData[11].title;
             let tt12 = $allData[12].title;
             let tt13 = $allData[13].title;
-            let tt14 = $allData[14].title;
-            let tt15 = $allData[15].title;
-            let tt16 = $allData[16].title;
-            let tt17 = $allData[17].title;
-            let tt18 = $allData[18].title;
-            let tt19 = $allData[19].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displaypromptred.find('.txtgroup span').eq(0).html(tt7);
-            displaypromptred.find('.txtgroup span').eq(1).html(tt8);
-            displaypromptred.find('.txtgroup span').eq(2).html(tt9);
-            displaypromptred.find('.txtgroup span').eq(3).html(tt10);
-            displaypromptred.find('.txtgroup span').eq(4).html(tt11);
-            displaypromptred.find('.txtgroup span').eq(5).html(tt12);
-            displaypromptred.find('.txtgroup span').eq(6).html(tt13);
-            displaypromptred.find('.txtgroup span').eq(7).html(tt14);
-            displaypromptred.find('.txtgroup span').eq(8).html(tt15);
-            displaypromptred.find('.txtgroup span').eq(9).html(tt16);      
-            displaypromptred.find('.txtgroup span').eq(10).html(tt17);      
-            displaypromptred.find('.txtgroup span').eq(11).html(tt18);      
-            displaypromptred.find('.txtgroup span').eq(12).html(tt19);      
+            displaypromptred.find('span').eq(0).html(tt7);
+            displaypromptred.find('span').eq(1).html(tt8);
+            displaypromptred.find('span').eq(2).html(tt9);
+            displaypromptred.find('span').eq(3).html(tt10);
+            displaypromptred.find('span').eq(4).html(tt11);
+            displaypromptred.find('span').eq(5).html(tt12);
+            displaypromptred.find('span').eq(6).html(tt13); 
             
+          // 타이핑 애니메이션 실행
+          function typeText($element, text) {
+            let index = 0;
+            let interval = setInterval(function() {
+              $element.append(text[index]);
+              index++;
+              if (index === text.length) {
+                clearInterval(interval);
+              }
+            }, 100);
+          }
+      
 
-
-
+          $('.txtgroup span').each(function(i) {
+            let text = $(this).text();
+            $(this).empty();
+            typeText($(this), text);
+          });
         });
-  }
+      }
+
     changeLang('kor');
 
+    
 
     let btn = $('.lang');
     
@@ -69,23 +89,6 @@ $(function() {
     })
 
 
-      //언어버튼 클릭 시 드롭다운 슬라이드 다운
-  let languagebtn = $('.languagebtn');
-  let dropdownMenu = $('.dropdown-menu');
-
-  languagebtn.click(function(){
-    dropdownMenu.slideToggle();
-  })
-
-  console.log(dropdownMenu);
-
-let speach_bubble = $('.intro .speach_bubble ');
-
-speach_bubble.click(function(){
-  $(this).find(p).eq(0).hide();
-  $(this).find(p).eq(1).show();
-  
-})
 
   /* intro.html */
   let jefferey_dot_red = $('.jefferey_dot');
@@ -95,4 +98,9 @@ speach_bubble.click(function(){
     tenel.show();
     jefferey_dot_red.show();
   }, 700);
+
+  
+
 });
+
+

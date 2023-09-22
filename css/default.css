@@ -625,7 +625,6 @@ bottom: 31%;
 left:14%;
 display: none;
 animation: upjefferey 0.5s;
-z-index: -1;
 }
 @keyframes upjefferey {
   0% {
@@ -642,21 +641,22 @@ z-index: -1;
   }  
 }
 
-.intromyself {
+.txtgroup {
   position: absolute;
   top:40%;
   left:70%;
   transform: translate(-70%,-50%);
+  text-align:left;
 }
 
 .txtgroup span {
   color: #fff;
   font-family: Play;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 20px;  
   font-weight: 400;
   text-transform:capitalize;
-  text-align: left;  
+  text-align: left;    
+  padding: 30px 0px;
 }
 
 /* future.html */
