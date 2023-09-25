@@ -486,6 +486,7 @@ display: none;
   width: 244px;
   height: 225px;
   position: absolute;
+  left: 60%;
   gap: 200px; 
 }
 
