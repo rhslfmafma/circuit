@@ -9,7 +9,6 @@ $(function() {
         dropdownMenu.slideToggle();
       })
     
-      console.log(dropdownMenu);
     
     let speach_bubble = $('.intro .speach_bubble ');
     
@@ -24,52 +23,11 @@ $(function() {
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
-  function changeLang(lang){
-  $.getJSON(`./data/${lang}.json`, function(data){
-            $allData = data;
-            console.log($allData);
-            let menu = $('.nav li');
-            let mn1 = $allData[0].menu.title1;
-            let mn2 = $allData[0].menu.title2;
-            let mn3 = $allData[0].menu.title3;
-            let mn4 = $allData[0].menu.title4;
+   
+  let spanElements = $('.txtgroup span');
+  let index = 0;
 
-            let displaypromptred = $('.intro .txtgroup');            
-            let tt7 = $allData[7].title;
-            let tt8 = $allData[8].title;
-            let tt9 = $allData[9].title;
-            let tt10 = $allData[10].title;
-            let tt11 = $allData[11].title;
-            let tt12 = $allData[12].title;
-            let tt13 = $allData[13].title;
-            let tt14 = $allData[14].title;
-            let tt15 = $allData[15].title;
-            let tt16 = $allData[16].title;
-            let tt17 = $allData[17].title;
-            let tt18 = $allData[18].title;
-            let tt19 = $allData[19].title;
-            let tt20 = $allData[20].title;
-            
-            menu.eq(0).find('a').text(mn1);
-            menu.eq(1).find('a').text(mn2);
-            menu.eq(2).find('a').text(mn3);
-            menu.eq(3).find('a').text(mn4);
-            
-            displaypromptred.find('span').eq(0).html(tt7);
-            displaypromptred.find('span').eq(1).html(tt8);
-            displaypromptred.find('span').eq(2).html(tt9);
-            displaypromptred.find('span').eq(3).html(tt10);
-            displaypromptred.find('span').eq(4).html(tt11);
-            displaypromptred.find('span').eq(5).html(tt12);
-            displaypromptred.find('span').eq(6).html(tt13); 
-            displaypromptred.find('span').eq(7).html(tt14); 
-            displaypromptred.find('span').eq(8).html(tt15); 
-            displaypromptred.find('span').eq(9).html(tt16); 
-            displaypromptred.find('span').eq(10).html(tt17); 
-            displaypromptred.find('span').eq(11).html(tt18); 
-            displaypromptred.find('span').eq(12).html(tt19); 
-            displaypromptred.find('span').eq(13).html(tt20); 
-            
+
           // 타이핑 애니메이션 실행
           function typeText($element, text) {
             let index = 0;
@@ -79,17 +37,45 @@ $(function() {
               if (index === text.length) {
                 clearInterval(interval);
               }
-            }, 100);
+            }, 300);
           }
-      
+     
+  function typeNext() {
+            if (index < spanElements.length) {
+              let text = spanElements.eq(index).text();
+              spanElements.eq(index).empty();
+              typeText(spanElements.eq(index),text);
+              index++;
+            }
+          }
 
-          $('.txtgroup span').each(function(i) {
-            let text = $(this).text();
-            $(this).empty();
-            typeText($(this), text);
+  
+  function changeLang(lang){
+  $.getJSON(`./data/${lang}.json`, function(data){
+            $allData = data;
+            console.log($allData);
+            let menu = $('.nav li');
+            for(let i = 0; i<menu.length; i++) {
+              menu.eq(i).find('a').text($allData[0].menu['title'+(i+1)]);
+            }
+
+            //displaypromptred 제목 업데이트
+            let displaypromptred = $('.intro .txtgroup');
+            for(let i = 7; i<=20; i++) {
+            displaypromptred.find('span').eq(i-7).html($allData[i].title);
+            }
+
+        
+          typeNext();
+
+
+          //다음 span 타이핑 시작하기 위한 이벤트리스너
+          spanElements.on('animationEnd webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
+            typeNext();
           });
         });
-      }
+    }
+
 
     changeLang('kor');
 

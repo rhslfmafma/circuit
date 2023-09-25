@@ -58,19 +58,20 @@ $(function() {
    
   /* histroy.html */
 
-  let objects = [];
-  for (let i =1; i<12; i++) {
-    objects.push($('.object_'+(i<10 ? '0' + i : i)));
-  }
+
+  let object = $('.object');
+  let translateX = 50;
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
     if (e.keyCode == 40 ) { // 40은 아래쪽 방향키
     // 페이지 이동 로직을 여기에 추가    
-    objects.forEach((object, index) => {
-      let translateX = parseInt($(object).css('transform').split(',')[4].trim()) - (40 + index * 400);
-      $(object).css({'transform' : 'translateX(' + translateX + 'px)'});
-    });
+
+    translateX=translateX-50;
+
+
+    object.css({'transform' : 'translateX(' + translateX + 'px)'});
+    console.log(translateX);
     }
   })
 });
