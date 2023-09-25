@@ -148,6 +148,9 @@ header {
   text-transform: uppercase;
   font-weight:600;
 }
+.nav li a:hover {
+  color: #0F08CC;
+}
 
 .display {
   width: 100%;
@@ -241,6 +244,10 @@ img.gday {
 
 .content * {
 color: #fff;
+}
+
+.display div h2 {
+font-size: 3rem;
 }
 
 .display h2:hover, .display p:hover {
@@ -588,6 +595,7 @@ font-family: Play;
   filter: brightness(80%);
   width: 453px;
   height: 491px;
+  opacity: .5;
 }
 
 
@@ -596,6 +604,14 @@ font-family: Play;
   filter: brightness(80%);
   width: 453px;
   height: 491px;
+  opacity: .5;
+}
+
+.comskillgroup:hover {
+  opacity: 1;
+}
+.langskillgroup:hover {
+  opacity: 1;
 }
 
 .speach_bubble_p02 {
