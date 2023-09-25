@@ -485,18 +485,24 @@ display: none;
   z-index: -1;
   width: 244px;
   height: 225px;
-  position: absolute;
+  position: relative;
   left: 60%;
-  gap: 200px; 
+
+
 }
 
 .objecttxt {
-   
-  background: red;
+  background: #107DB5;
+  position: relative;
+  gap: 200%;
 }
 
-
-
+.object div {
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
 .object h3 {
   color: #FDFDFD;
   text-shadow: 5px 5px 0px #000;
@@ -506,9 +512,7 @@ display: none;
   font-weight: 900;
   line-height: 100%; /* 86.49px */
   letter-spacing: 3.46px;
-
-transform: translate(-50%, 30%);
-white-space: nowrap;
+  white-space: nowrap;
 }
 .object p {
   color: #222;
@@ -517,7 +521,6 @@ white-space: nowrap;
   font-size: 18px;
   font-weight: 700;
   line-height: normal; 
-  transform: translate(-50%, 50%);  
   white-space: nowrap;
 }
 .object p:last-child {
