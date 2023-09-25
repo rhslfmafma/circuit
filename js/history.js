@@ -74,3 +74,26 @@ $(function() {
     }
   })
 });
+
+//  /* history_main.html 디벨롭 */
+
+//   let currentIdx = 0;
+
+//  function showobject(num) {  
+//   objects.eq(num).css({'transform' : 'translateX(' + translateX + 'px)'});
+//  }
+
+//  $(document).keydown(function(e) {
+//    console.log(e.keyCode);   
+//      if (e.keyCode == 40) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
+//        // 페이지 이동 로직을 여기에 추가          
+//          if (currentIdx == 1 ) {
+//            showobject(++currentIdx);
+//            }
+//        }
+//      if (e.keyCode == 37) {
+//        if (currentIdx > 0) {
+//          showobject(--currentIdx);
+//      }
+//    }
+//  })

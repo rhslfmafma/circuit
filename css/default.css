@@ -379,7 +379,9 @@ display: none;
   position: absolute;
   top:30px;
   right:80px;
+  cursor: pointer;
 }
+
 
 .languagebtn::after {
   content: 'Language';
@@ -587,7 +589,7 @@ white-space: nowrap;
 
 .history .speach_bubble {
   position: fixed;
-  top:60%;
+  top:65%;
   left:50%;
   z-index: 99;
   border-radius: 20px;
@@ -608,10 +610,36 @@ white-space: nowrap;
   position: relative;
 }
 
+.able div .groups h2 {
+  color: #FFF;
+font-family: Inter;
+font-size: 52px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transform: translateY(30px);
+}
+
+.able > h2 {
+padding-top: 3%;
+font-size: 30px;
+color: #fff;
+font-family: Play;
+
+
+}
+
 .able .skillgroups {
   position: absolute;
   top:50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.groups {
+  position: absolute;
+  top:50%;
+  left:50%;
   transform: translate(-50%, -50%);
 }
 
@@ -621,6 +649,8 @@ white-space: nowrap;
   width: 453px;
   height: 491px;
 }
+
+
 .comskillgroup {
   background: #65BCD8;
   filter: brightness(80%);
@@ -687,8 +717,8 @@ animation: upjefferey 0.5s;
 
 .txtgroup {
   position: absolute;
-  top:40%;
-  left:70%;
+  top:20%;
+  left:80%;
   transform: translate(-70%);
   border-radius: 20px; 
   text-align: left; 
@@ -697,13 +727,20 @@ animation: upjefferey 0.5s;
 .txtgroup span {
   color: #fff;
   font-family: Play;
-  font-size: 14px;  
+  font-size: 17px;  
   font-weight: 400;
   line-height: 40px;
 }
 
 
 /* future.html */
+
+.future > h2 {
+  padding-top: 3%;
+  font-size: 30px;
+  color: #fff !important;
+  font-family: Play;
+}
 
 .photofiled {
  width: 400px;
@@ -712,3 +749,6 @@ animation: upjefferey 0.5s;
   width: 100%;
 }
 
+.swipe-slide {
+  padding: 0px 14%;
+}
