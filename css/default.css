@@ -246,26 +246,74 @@ img.gday {
 color: #fff;
 }
 
+
+.display01 div *  {
+  color: #fff;
+  }
+
 .display div h2 {
 font-size: 3rem;
+padding-top: 30%;
 }
 
 .display h2:hover, .display p:hover {
   animation: blink 0.5s step-end infinite;
 }
 
-.display01 div h2 {
-  padding-top: 30%;
-}
 
 .display01 div p {
   padding-top: 170px;
   font-size: 20px;
 }
 
-.display01 div *  {
-color: #fff;
+.question_modal {
+  border-radius: 20px;
+  border: 11px dashed #000;
+  width: 532px;
+  height: 200px;
+  position: absolute;
+  top:32%;
+  left:25%;
 }
+
+.question_modal svg {
+  transform: rotate(-90deg);
+  position: absolute;
+  top:35%; /* 1번 */
+  left: 10%;
+}
+
+.question_modal h4 {
+  color: #000;
+font-family: Play;
+font-size: 30px;
+font-style: normal;
+font-weight: bolder;
+line-height: 60px; /* 153.846% */
+text-transform: uppercase;
+padding-left: 36%;
+}
+
+.question_modal h3 {
+  color: #000;
+font-family: Play;
+font-size: 20px;
+font-style: normal;
+font-weight: bolder;
+line-height: 30px; /* 153.846% */
+text-transform: uppercase;
+white-space: nowrap;
+margin-top: 30px;
+padding-top: 0px;
+}
+
+.question_modaltxt {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 
 /* 화면 전환 */
 
