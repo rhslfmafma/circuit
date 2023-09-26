@@ -269,11 +269,14 @@ padding-top: 30%;
 .question_modal {
   border-radius: 20px;
   border: 11px dashed #000;
-  width: 532px;
+  width: 500px;
   height: 200px;
   position: absolute;
-  top:32%;
+  top:35%;
   left:25%;
+  display: none;
+  opacity: .5;
+  transition: opacity 0.5s;
 }
 
 .question_modal svg {
@@ -292,6 +295,7 @@ font-weight: bolder;
 line-height: 60px; /* 153.846% */
 text-transform: uppercase;
 padding-left: 36%;
+animation: blink 0.5s step-end infinite;
 }
 
 .question_modal h3 {
@@ -305,6 +309,10 @@ text-transform: uppercase;
 white-space: nowrap;
 margin-top: 30px;
 padding-top: 0px;
+}
+.question_modal h3:hover {
+
+animation: blink 0.5s step-end infinite;
 }
 
 .question_modaltxt {

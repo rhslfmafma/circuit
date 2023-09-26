@@ -11,6 +11,7 @@ $(function() {
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
   let jefferey = $('.jefferey_dot');
+  let question_modal = $('.question_modal');
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -109,7 +110,9 @@ speach_bubble.click(function(){
               console.log('jefferey 이동');
               jefferey.animate({
                 marginLeft: '450px'
-              },1000);
+              },500);
+              question_modal.show();
+              question_modal.animate({opacity:'1'},800);
               }
             }           
             if (currentIdx == 7 ) {
