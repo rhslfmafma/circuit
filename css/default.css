@@ -708,3 +708,31 @@ animation: upjefferey 0.5s;
 .swipe-slide {
   padding: 0px 14%;
 }
+
+footer{
+width: 800px;
+height: 60px;
+border-radius: 210px;
+border: 5px solid #fff;
+text-align: center;
+background: #fff;
+margin: 20px auto;
+
+}
+footer h3{
+padding-left: 30px;
+}
+footer h3, footer h3 a{
+  color: #1380CF;
+  text-align: center;
+  font-family: Play;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 260.87% */
+  text-transform: uppercase;
+}
+
+footer .vertical_bar {
+  padding: 0px 10px;
+}
