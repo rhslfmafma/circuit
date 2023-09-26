@@ -99,19 +99,19 @@ speach_bubble.click(function(){
               isDisplay02Hidden = false;
               showbubble(currentIdx);
             }
-            else if (currentIdx == 1 ) {
+            if (currentIdx == 1 ) {
               showbubble(++currentIdx);
               jefferey.show();
               }
-            else if (currentIdx < 5) {
+            if (currentIdx < 5) {
               console.log(currentIdx);
             showbubble(++currentIdx);
             } 
-            else if (currentIdx > 2 || currentIdx == 3) {
-              
+            if (currentIdx > 2 || currentIdx == 3) {
+
               jefferey.hide();
             } 
-            else if ( currentIdx == 5 ) {
+            if ( currentIdx == 5 ) {
              $(window).attr('location', '../intro.html'); // Corrected this line
             }
           }

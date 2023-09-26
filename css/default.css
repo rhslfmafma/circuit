@@ -446,6 +446,7 @@ display: none;
 .history .jefferey_dot {  
   transform: translate(-60%, 200px);
   animation: jeffereymove 50s;  
+  z-index: 99;
 }
 
 .history .dropdowns {
@@ -492,7 +493,7 @@ display: none;
   height: 225px;
   position: relative;
   left: 60%;
-  gap: 30px;
+  gap: 20%;
 
 }
 
@@ -527,10 +528,19 @@ transform: translate(-50%,-50%);
   font-weight: 700;
   line-height: normal; 
   white-space: nowrap;
+  padding-top: 20px;
 }
 .object p:last-child {
   transform: translateY(-50%, -30px);  
 }
+
+.objecttxt:first-child {
+  background: #B284EC;
+}
+.objecttxt:nth-of-type(2) {
+  background: #BEEC84;
+}
+
 
 .history .speach_bubble {
   position: fixed;
