@@ -102,15 +102,14 @@ speach_bubble.click(function(){
         
             if (currentIdx < 5) {      
               console.log(currentIdx);
-            showbubble(++currentIdx);
+            showbubble(currentIdx++);
             if (currentIdx == 2 ) {              
               jefferey.show();
               }
-            } 
-            if (currentIdx > 2 || currentIdx == 3) {
-
+            if (currentIdx == 4 ) {              
               jefferey.hide();
-            } 
+              }
+            }           
             if ( currentIdx == 5 ) {
              $(window).attr('location', '../intro.html'); // Corrected this line
             }

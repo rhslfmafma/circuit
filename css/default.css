@@ -149,7 +149,7 @@ header {
   font-weight:600;
 }
 .nav li a:hover {
-  color: #0F08CC;
+  color: #083E65;
 }
 
 .display {
@@ -534,7 +534,8 @@ transform: translate(-50%,-50%);
   transform: translateY(-50%, -30px);  
 }
 
-.objecttxt:first-child {
+.objecttxt:first-child,
+.objecttxt:nth-of-type(10) {
   background: #B284EC;
 }
 .objecttxt:nth-of-type(2) {
@@ -543,14 +544,17 @@ transform: translate(-50%,-50%);
 .objecttxt:nth-of-type(5) {
   background: #84AEEC;
 }
+.objecttxt:nth-of-type(7),
+.objecttxt:nth-of-type(13) {
+  background: #EC84C2;
+}
 .objecttxt:nth-of-type(3),
 .objecttxt:nth-of-type(4),
 .objecttxt:nth-of-type(6),
 .objecttxt:nth-of-type(8),
 .objecttxt:nth-of-type(9),
-.objecttxt:nth-of-type(10),
-.objecttxt:nth-of-type(12)
-{
+.objecttxt:nth-of-type(11),
+.objecttxt:nth-of-type(12){
   background: #ECB684;
 }
 
@@ -759,4 +763,8 @@ footer h3, footer h3 a{
 
 footer .vertical_bar {
   padding: 0px 10px;
+}
+
+footer h3 *:hover {
+color: #083E65;
 }
