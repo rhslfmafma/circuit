@@ -67,10 +67,18 @@ $(function() {
     if (e.keyCode == 40 ) { // 40은 아래쪽 방향키
     // 페이지 이동 로직을 여기에 추가    
 
-    translateX=translateX-50;
+    translateX=translateX-500;
 
     object.css({'transform' : 'translateX(' + translateX + 'px)'});
     console.log(translateX);
-    }
+    } 
+    if (e.keyCode == 39 ) { // 40은 아래쪽 방향키
+    // 페이지 이동 로직을 여기에 추가    
+
+    translateX=translateX+500;
+
+    object.css({'transform' : 'translateX(' + translateX + 'px)'});
+    console.log(translateX);
+    } 
   })
 });
