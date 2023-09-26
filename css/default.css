@@ -489,12 +489,10 @@ display: none;
 
 
 .object {
-  z-index: -1;
-  width: 244px;
   height: 225px;
   position: relative;
   left: 60%;
-
+  gap: 30px;
 
 }
 
@@ -504,7 +502,7 @@ display: none;
   gap: 200%;
 }
 
-.object div {
+.object .objecttxt > div {
 position: absolute;
 top:50%;
 left: 50%;
@@ -721,6 +719,9 @@ margin: 20px auto;
 }
 footer h3{
 padding-left: 30px;
+}
+footer h3 a{
+padding-left: 10px;
 }
 footer h3, footer h3 a{
   color: #1380CF;

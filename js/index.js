@@ -108,6 +108,7 @@ speach_bubble.click(function(){
             showbubble(++currentIdx);
             } 
             else if (currentIdx > 2 || currentIdx == 3) {
+              
               jefferey.hide();
             } 
             else if ( currentIdx == 5 ) {
