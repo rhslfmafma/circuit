@@ -652,7 +652,7 @@ font-family: Play;
 .reddisplay  {    
   width: 100%;
   height: 700px;
-  background: #CF1313;
+  background: #6096FF;
   margin-top: 72px;
   text-align: center;
   position: relative;
@@ -706,7 +706,7 @@ animation: upjefferey 0.5s;
   }
 
 .txtgroup span {
-  color: #fff;
+  color: #83D214;
   font-family: Play;
   font-size: 17px;  
   font-weight: 400;
@@ -715,6 +715,12 @@ animation: upjefferey 0.5s;
 
 
 /* future.html */
+
+.future {
+  position: relative;
+  padding: 0px !important;
+
+}
 
 .future > h2 {
   padding-top: 3%;
@@ -733,6 +739,25 @@ animation: upjefferey 0.5s;
 .swipe-slide {
   padding: 0px 14%;
 }
+
+
+.future .controllerbtn {
+  position: absolute;
+  top:0;  
+}
+
+.future .controllerbtn.prev {
+left:0;
+}
+.future .controllerbtn.next {
+right:0;
+}
+
+.future .displaygroup {
+  width: 1052px;
+  margin: 0 auto;
+}
+
 
 footer{
 width: 800px;

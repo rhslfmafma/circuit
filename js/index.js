@@ -100,17 +100,19 @@ speach_bubble.click(function(){
               showbubble(currentIdx);
             }
         
-            if (currentIdx < 5) {      
-              console.log(currentIdx);
+            if (currentIdx < 7) {                    
             showbubble(currentIdx++);
-            if (currentIdx == 2 ) {              
+            if (currentIdx == 3 ) {              
               jefferey.show();
               }
-            if (currentIdx == 4 ) {              
-              jefferey.hide();
+            if (currentIdx == 5 ) {              
+              console.log('jefferey 이동');
+              jefferey.css({
+                marginLeft: '250px'
+              });
               }
             }           
-            if ( currentIdx == 5 ) {
+            if (currentIdx == 7 ) {
              $(window).attr('location', '../intro.html'); // Corrected this line
             }
           }
