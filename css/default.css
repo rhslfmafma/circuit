@@ -540,6 +540,19 @@ transform: translate(-50%,-50%);
 .objecttxt:nth-of-type(2) {
   background: #BEEC84;
 }
+.objecttxt:nth-of-type(5) {
+  background: #84AEEC;
+}
+.objecttxt:nth-of-type(3),
+.objecttxt:nth-of-type(4),
+.objecttxt:nth-of-type(6),
+.objecttxt:nth-of-type(8),
+.objecttxt:nth-of-type(9),
+.objecttxt:nth-of-type(10),
+.objecttxt:nth-of-type(12)
+{
+  background: #ECB684;
+}
 
 
 .history .speach_bubble {

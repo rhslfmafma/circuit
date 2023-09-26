@@ -10,7 +10,7 @@ $(function() {
   let display02 = $('.display02');
   let isDisplay01Hidden = false;
   let isDisplay02Hidden = true;
-  let jefferey = $('.jefferey_dot')
+  let jefferey = $('.jefferey_dot');
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -99,13 +99,13 @@ speach_bubble.click(function(){
               isDisplay02Hidden = false;
               showbubble(currentIdx);
             }
-            if (currentIdx == 1 ) {
-              showbubble(++currentIdx);
-              jefferey.show();
-              }
-            if (currentIdx < 5) {
+        
+            if (currentIdx < 5) {      
               console.log(currentIdx);
             showbubble(++currentIdx);
+            if (currentIdx == 2 ) {              
+              jefferey.show();
+              }
             } 
             if (currentIdx > 2 || currentIdx == 3) {
 
