@@ -107,9 +107,9 @@ speach_bubble.click(function(){
               }
             if (currentIdx == 5 ) {              
               console.log('jefferey 이동');
-              jefferey.css({
-                marginLeft: '250px'
-              });
+              jefferey.animate({
+                marginLeft: '450px'
+              },1000);
               }
             }           
             if (currentIdx == 7 ) {
