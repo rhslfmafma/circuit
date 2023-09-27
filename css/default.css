@@ -732,9 +732,8 @@ font-family: Play;
 
 .able_modal_eq0 {
   position: absolute;
-  left: 103%;
-  top:60px;
-  transform: translateX(-50%);
+margin-left: 89%;
+  top:0;
 }
 
 
