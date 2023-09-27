@@ -699,6 +699,57 @@ font-family: Play;
   display: none;
 }
 
+
+.able_modal {
+  position: relative;
+}
+
+.able_modal h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+.able_modal .langmodalbg {
+  background: #D8656C;
+  filter: brightness(80%);
+  width: 1053px;
+  height: 491px;
+  opacity: .5;
+}
+.able_modal .commodalbg {
+  background: #65BCD8;
+  filter: brightness(80%);
+  width: 1053px;
+  height: 491px;
+  opacity: .5;
+}
+
+.able_modal .modalimg {
+  width: 526%;
+  height: 491px;
+}
+
+.able_modal .modalimg img {
+  width: 100%;
+  padding: 0px 197px;
+  transform: translateX(-197px);
+}
+
+.able_modal .accordion-item:first-child {
+  transform: translateY(30%);
+}
+
+.able_modal .accordion-item:nth-of-type(2) {
+  transform: translateY(60%);
+}
+.able_modal .accordion-item:nth-of-type(2) {
+  transform: translateY(90%);
+}
+
 /* intro.html */
 
 .displaygroup .intro {
@@ -775,38 +826,72 @@ animation: upjefferey 0.5s;
 .future {
   position: relative;
   padding: 0px !important;
+  transform: translateX(-2px);
 
 }
 
-.future > h2 {
-  padding-top: 3%;
-  font-size: 30px;
-  color: #fff !important;
-  font-family: Play;
+
+
+
+.future .swiper-wrapper {
+margin-left: 3%;
 }
+
+.future .swiper-slide {
+  gap: 7%;
+}
+
+
+.future .display {
+  background: #ebebeb;
+}
+
 
 .photofiled {
  width: 400px;
+ padding-top: 11%;
 }
 .photofiled img {
   width: 100%;
 }
 
-.swipe-slide {
-  padding: 0px 14%;
+
+.textfield p {
+  text-align: center;
+  font-family: Play;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 260.87% */
+  text-transform: uppercase;
 }
 
+.textfield * {
+  white-space: nowrap;  
+
+}
+
+.future h2 {
+  color: #1380CF;
+  text-align: center;
+  font-family: Play;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 260.87% */
+  text-transform: uppercase;
+}
 
 .future .controllerbtn {
   position: absolute;
-  top:0;  
+  top:-10%;  
 }
 
 .future .controllerbtn.prev {
-left:0;
+left:12px;
 }
 .future .controllerbtn.next {
-right:0;
+right:-9px;
 }
 
 .future .displaygroup {
@@ -814,6 +899,12 @@ right:0;
   margin: 0 auto;
 }
 
+.future .swiper-button-prev {
+  transform: translateX(20px);
+}
+.future .swiper-button-next {
+  transform: translateX(-20px);
+}
 
 footer{
 width: 800px;
