@@ -34,6 +34,7 @@ $(function() {
             let tt4 = $allData[4].title;
             let tt5 = $allData[5].title;
             let tt6 = $allData[6].title;
+            let tt7 = $allData[7].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
@@ -46,6 +47,7 @@ $(function() {
             displayprompt.find('p').eq(3).html(tt4);
             displayprompt.find('p').eq(4).html(tt5);
             displayprompt.find('p').eq(5).html(tt6);
+            displayprompt.find('p').eq(6).html(tt7);
             
 
 
@@ -118,7 +120,7 @@ speach_bubble.click(function(){
               showbubble(currentIdx);
             }
         
-            if (currentIdx < 7) {                    
+            if (currentIdx < 5) {                    
             showbubble(currentIdx++);
             if (currentIdx == 3 ) {              
               jefferey.show();
@@ -130,36 +132,29 @@ speach_bubble.click(function(){
               },500);
               question_modal.show();
               question_modal.animate({opacity:'1'},800);
-              }
-            if (currentIdx == 6 ) {              
-              console.log('jefferey 이동');
-              jefferey.animate({
-                marginLeft: '450px'
-              },500);
-              question_modal.show();
-              question_modal.animate({opacity:'1'},800);
-              }
-            }              
-            if (currentIdx == 8 ) {
-             $(window).attr('location', '../intro.html'); // Corrected this line
-            }
+              }            
+            } 
           }
+      
+          
+          
         if (e.keyCode == 37) {
-          if (currentIdx > 0) {            
+          if (currentIdx > 5 || currentIdx < 8) {            
             showbubble(--currentIdx);
-        }
+        }        
       }
+
     })
 
 
     question_modaltxt.click(function(){      
     let target = $(this).attr('data-yes');
     if (target == 'yes') {
-      currentIdx = 7;
+      currentIdx = 6;
       console.log(currentIdx,'yes');
-      showbubble(currentIdx);      
+      showbubble(currentIdx);              
     } else {
-      currentIdx = 2;
+      currentIdx = 5;
       console.log(currentIdx, 'no');
       showbubble(currentIdx);
     }
