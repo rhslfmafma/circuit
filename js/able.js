@@ -50,4 +50,14 @@ $(function() {
     changeLang(target);
     })
 
+
+    let able_modal_eq0 = $('.able_modal_eq0');
+    let langskillgroup = $('.langskillgroup');
+
+    langskillgroup.click(function(){
+      able_modal_eq0.css({
+        left: '-50px'
+      });
+    });
+
 });

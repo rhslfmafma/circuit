@@ -19,6 +19,12 @@ a{
 }
 
 
+.displaygroup {
+  width: 1016px !important;
+  margin: 0 auto;
+}
+
+
 /* Rayout */
 .container {
   width: 1320PX;
@@ -153,7 +159,6 @@ header {
 }
 
 .display {
-  width: 100%;
   height: 700px;
   background: #000;
   margin-top: 72px;
@@ -210,7 +215,7 @@ img.gday {
 /* index_main.html */
 
 .contoller {
-  margin-top:-20px;
+  margin-top:-40px;
 }
 
 .controllerbtn {  
@@ -225,12 +230,14 @@ img.gday {
   height: 342px;
   transform: translateY(50%); 
   background: url(../image/prev.png) no-repeat;
+  left: 19px;
 }
 .next {
   width: 131px;
   height: 339px;
   transform: translateY(50%); 
   background: url(../image/next.png) no-repeat;
+  right: 19px;
 }
 
 .controllerbtn > h4 > a > p {
@@ -331,9 +338,6 @@ transform: translateX(25px);
 
 /* 화면 전환 */
 
-.displaygroup {
-  flex: 1;
-}
 .display01 {
   color: #fff;
 }
@@ -382,7 +386,7 @@ transform: translateX(25px);
   font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
-  line-height: 60px; /* 153.846% */
+  line-height: 50px; /* 153.846% */
   text-transform:capitalize;
   text-align: left;  
 }
@@ -532,7 +536,7 @@ display: none;
   text-align: center;
   position: relative; 
   background:transparent;   
-  width: 1052px;
+  width: 1016px !important;
   height: 700px;
   overflow: hidden;
 }
@@ -725,6 +729,14 @@ font-family: Play;
 }
 
 
+.able_modal_eq0 {
+  position: absolute;
+  left: 103%;
+  top:60px;
+  transform: translateX(-50%);
+}
+
+
 .able_modal .langmodalbg {
   background: #D8656C;
   filter: brightness(80%);
@@ -750,8 +762,8 @@ font-family: Play;
 }
 
 
-.able_modal .accordion {
-  padding-left: 30%;
+.able_modal .accordion {  
+  width: 100px;
 }
 
 
@@ -761,8 +773,9 @@ font-family: Play;
   overflow: hidden;   
 }
 
+
 .reddisplay  {    
-  width: 100%;
+  width: 1016px;
   height: 700px;
   background: #6096FF;
   margin-top: 72px;
@@ -831,11 +844,15 @@ animation: upjefferey 0.5s;
 .future {
   position: relative;
   padding: 0px !important;
-  transform: translateX(-2px);
 
 }
 
-
+.future .prev {
+  left: 27px;
+}
+.future .next {
+  right: 9px;
+}
 
 
 
@@ -892,27 +909,15 @@ margin: 0px 10%;
 
 .future .controllerbtn {
   position: absolute;
-  top:-10%;  
 }
 
-.future .controllerbtn.prev {
-left:12px;
-}
-.future .controllerbtn.next {
-right:-9px;
-}
 
-.future .displaygroup {
-  width: 1052px;
-  margin: 0 auto;
-}
 
 .future .swiper-button-prev {
   transform: translateX(20px);
 }
 .future .swiper-button-next {
-  transform: translateX(-20px);
-}
+  transform: translateX(9px);}
 
 footer{
 width: 800px;
@@ -922,7 +927,7 @@ border: 5px solid #fff;
 text-align: center;
 background: #fff;
 margin: 0 auto;
-transform: translateY(9px);
+transform: translateY(20px);
 
 }
 footer h3{

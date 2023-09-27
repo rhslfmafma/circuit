@@ -118,12 +118,20 @@ speach_bubble.click(function(){
               showbubble(currentIdx);
             }
         
-            if (currentIdx < 5) {                    
+            if (currentIdx < 7) {                    
             showbubble(currentIdx++);
             if (currentIdx == 3 ) {              
               jefferey.show();
               }
-            if (currentIdx == 5 ) {              
+            if (currentIdx == 5) {              
+              console.log('jefferey 이동');
+              jefferey.animate({
+                marginLeft: '450px'
+              },500);
+              question_modal.show();
+              question_modal.animate({opacity:'1'},800);
+              }
+            if (currentIdx == 6 ) {              
               console.log('jefferey 이동');
               jefferey.animate({
                 marginLeft: '450px'
@@ -132,22 +140,30 @@ speach_bubble.click(function(){
               question_modal.animate({opacity:'1'},800);
               }
             }              
-            if (currentIdx == 7 ) {
+            if (currentIdx == 8 ) {
              $(window).attr('location', '../intro.html'); // Corrected this line
             }
           }
         if (e.keyCode == 37) {
-          if (currentIdx > 0) {
+          if (currentIdx > 0) {            
             showbubble(--currentIdx);
         }
       }
-      console.log(currentIdx);
     })
 
 
-    question_modaltxt.eq(0).click(function(){
-      currentIdx == 6
+    question_modaltxt.click(function(){      
+    let target = $(this).attr('data-yes');
+    if (target == 'yes') {
+      currentIdx = 7;
+      console.log(currentIdx,'yes');
+      showbubble(currentIdx);      
+    } else {
+      currentIdx = 2;
+      console.log(currentIdx, 'no');
       showbubble(currentIdx);
-    })
+    }
+
+    });
 });
 

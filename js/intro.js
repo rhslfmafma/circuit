@@ -49,6 +49,14 @@ $(function() {
             }
           }
 
+          setInterval(() => {
+            typeNext(index)
+            index++;     
+            if (index === spanElements.find('li').length) {
+              clearInterval(interval);
+            }       
+          2000}, interval);
+
   
   function changeLang(lang){
   $.getJSON(`./data/${lang}.json`, function(data){
