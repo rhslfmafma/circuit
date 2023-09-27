@@ -45,7 +45,7 @@ $(function() {
           if (index === spanElements.length) {
             clearInterval(typeanimation);
           }
-        }, 2000);
+        }, 250);
         
  
   
@@ -61,7 +61,7 @@ $(function() {
 
           //displaypromptred 제목 업데이트
           let displaypromptred = $('.intro .txtgroup');
-          for(let i = 7; i<=20; i++) {
+          for(let i = 8; i<=20; i++) {
           displaypromptred.find('li').eq(i-7).html($allData[i].title);
           }
 

@@ -518,6 +518,7 @@ display: none;
 
 .history .dropdowns {
   color: #fff;
+  z-index: 99;
 
 }
 @keyframes jeffereymove {
@@ -715,7 +716,7 @@ font-family: Play;
   position: relative; 
   width: 100%;
   height: 700px;
-  background: #000;
+  background: #D8656C;
   margin-top: 72px;
   text-align: center;
   position: relative;
@@ -723,47 +724,39 @@ font-family: Play;
 
 .able_modal > h2 {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  color: #000;
+  font-family: Play;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 50px; /* 153.846% */
 }
 
 
 .able_modal_eq0 {
   position: absolute;
-margin-left: 89%;
+margin-left: 1178px;
   top:0;
 }
 
 
-.able_modal .langmodalbg {
-  background: #D8656C;
-  filter: brightness(80%);
-  width: 1053px;
-  height: 491px;
-  opacity: .5;
-}
-.able_modal .commodalbg {
-  background: #65BCD8;
-  filter: brightness(80%);
-  width: 1053px;
-  height: 491px;
-  opacity: .5;
-}
 
-.able_modal .modalimg {
-  width: 526%;  
-}
+
 
 .able_modal .modalimg img {
-  width: 100%;
-  margin-right: 20px;
+  width: 80%;
+  margin: 20% 0px;
 }
 
 
 .able_modal .accordion {  
-  width: 100px;
+  width: 50%;
+  padding-top: 12%;
+  margin-right: 40px;
 }
 
 
@@ -787,7 +780,7 @@ margin-left: 89%;
 
 .intro  .tenel {
   margin-left: -60%;
-  margin-top: 45%;
+  margin-top: 46%;
   animation: uptenel 1s;
   transform-origin: center bottom;  
 
@@ -830,7 +823,7 @@ animation: upjefferey 0.5s;
   text-align: left; 
   }
 
-.txtgroup span {
+.txtgroup li {
   color: #FFF;
   font-family: Play;
   font-size: 17px;  
