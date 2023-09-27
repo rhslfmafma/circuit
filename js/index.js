@@ -83,11 +83,28 @@ speach_bubble.click(function(){
 
     let speach_bubble_slide = $('.speach_bubble_slide p');
     let currentIdx = 0;
+    let question_modaltxt = $('.question_modaltxt h3');
+    let question_modaltxt_tri = $('.question_modal svg');
+    
+
 
     function showbubble(num) {
       speach_bubble_slide.hide();
       speach_bubble_slide.eq(num).show();
     }
+
+
+    question_modaltxt.eq(0).hover(function(){
+      question_modaltxt_tri.css({
+        transform: 
+        'translateY(0px) rotate(-90deg)'});
+    });
+
+    question_modaltxt.eq(1).hover(function(){
+      question_modaltxt_tri.css({
+        transform: 'translateY(60px) rotate(-90deg)'});
+    });
+
 
     $(document).keydown(function(e) {
       console.log(e.keyCode);   

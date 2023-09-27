@@ -64,7 +64,7 @@ $(function() {
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
-    if (e.keyCode == 40 ) { // 40은 아래쪽 방향키
+    if (e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 39) { // 39은 왼쪽 방향키
     // 페이지 이동 로직을 여기에 추가    
 
     translateX=translateX-500;
@@ -72,7 +72,7 @@ $(function() {
     object.css({'transform' : 'translateX(' + translateX + 'px)'});
     console.log(translateX);
     } 
-    if (e.keyCode == 39 ) { // 40은 아래쪽 방향키
+    if (e.keyCode == 37) {
     // 페이지 이동 로직을 여기에 추가    
 
     translateX=translateX+500;
