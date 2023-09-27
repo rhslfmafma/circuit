@@ -21,11 +21,54 @@ $(function() {
 
    
 
-  // $.getJSON('파일경로', 할일);  
-  let  $allData = [];
-   
-  let spanElements = $('.txtgroup span');
-  let index = 0;
+
+
+// $.getJSON('파일경로', 할일);  
+let  $allData = [];
+let spanElements = $('.txtgroup span');
+let index = 0;
+function changeLang(lang){
+$.getJSON(`./data/${lang}.json`, function(data){
+          $allData = data;
+          console.log($allData);
+          let menu = $('.nav li');
+          let mn1 = $allData[0].menu.title1;
+          let mn2 = $allData[0].menu.title2;
+          let mn3 = $allData[0].menu.title3;
+          let mn4 = $allData[0].menu.title4;
+
+          let displayprompt = $('.whitedisplay .speach_bubble');
+          let tt1 = $allData[1].title;
+          let tt2 = $allData[2].title;
+          let tt3 = $allData[3].title;
+          console.log(tt1);
+
+          let tt4 = $allData[4].title;
+          let tt5 = $allData[5].title;
+          let tt6 = $allData[6].title;
+          
+          menu.eq(0).find('a').text(mn1);
+          menu.eq(1).find('a').text(mn2);
+          menu.eq(2).find('a').text(mn3);
+          menu.eq(3).find('a').text(mn4);
+          
+          displayprompt.find('p').eq(0).html(tt1);
+          displayprompt.find('p').eq(1).html(tt2);
+          displayprompt.find('p').eq(2).html(tt3);
+          displayprompt.find('p').eq(3).html(tt4);
+          displayprompt.find('p').eq(4).html(tt5);
+          displayprompt.find('p').eq(5).html(tt6);
+          
+
+
+
+      });
+}
+
+
+
+
+
 
 
           // 타이핑 애니메이션 실행
@@ -87,6 +130,11 @@ $(function() {
 
     changeLang('kor');
 
+
+
+
+
+    
     
 
     let btn = $('.lang');
