@@ -251,9 +251,10 @@ color: #fff;
   color: #fff;
   }
 
-.display div h2 {
-font-size: 3rem;
+.display >  div h2 {
+font-size: 2em;
 padding-top: 30%;
+font-family: 'Press Start 2P', cursive;
 }
 
 .display h2:hover, .display p:hover {
@@ -261,15 +262,17 @@ padding-top: 30%;
 }
 
 
-.display01 div p {
+.display01 > div p {
   padding-top: 170px;
   font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  
 }
 
 .question_modal {
   border-radius: 20px;
-  border: 11px dashed #000;
-  width: 500px;
+  border: 9px dashed #000;
+  width: 350px;
   height: 200px;
   position: absolute;
   top:35%;
@@ -288,19 +291,19 @@ padding-top: 30%;
 
 .question_modal h4 {
   color: #000;
-font-family: Play;
-font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+font-size: 20px;
 font-style: normal;
 font-weight: bolder;
 line-height: 60px; /* 153.846% */
 text-transform: uppercase;
-padding-left: 36%;
 animation: blink 0.5s step-end infinite;
+text-align: center;
 }
 
 .question_modal h3 {
   color: #000;
-font-family: Play;
+font-family: 'Press Start 2P', cursive;
 font-size: 20px;
 font-style: normal;
 font-weight: bolder;
@@ -309,10 +312,13 @@ text-transform: uppercase;
 white-space: nowrap;
 margin-top: 30px;
 padding-top: 0px;
+text-align: center;
+transform: translateX(25px);
 }
 .question_modal h3:hover {
-
-animation: blink 0.5s step-end infinite;
+  color: #083E65;
+  animation: blink 0.5s step-end infinite;
+  cursor: pointer;
 }
 
 .question_modaltxt {
@@ -640,7 +646,7 @@ transform: translate(-50%,-50%);
 
 .able div .groups h2 {
   color: #FFF;
-font-family: Inter;
+font-family: play;
 font-size: 52px;
 font-style: normal;
 font-weight: 600;

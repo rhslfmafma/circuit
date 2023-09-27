@@ -118,7 +118,7 @@ speach_bubble.click(function(){
               showbubble(currentIdx);
             }
         
-            if (currentIdx < 7) {                    
+            if (currentIdx < 5) {                    
             showbubble(currentIdx++);
             if (currentIdx == 3 ) {              
               jefferey.show();
@@ -131,7 +131,7 @@ speach_bubble.click(function(){
               question_modal.show();
               question_modal.animate({opacity:'1'},800);
               }
-            }           
+            }              
             if (currentIdx == 7 ) {
              $(window).attr('location', '../intro.html'); // Corrected this line
             }
@@ -142,6 +142,12 @@ speach_bubble.click(function(){
         }
       }
       console.log(currentIdx);
+    })
+
+
+    question_modaltxt.eq(0).click(function(){
+      currentIdx == 6
+      showbubble(currentIdx);
     })
 });
 
