@@ -136,7 +136,7 @@ header {
 
 
 .index_main_logo{
-  background: url(..../image/LOGO2.png) no-repeat;
+  background: url(../image/LOGO2.png) no-repeat;
   width: 189px;
   height: 70px;
   text-indent: -9999em;
@@ -230,14 +230,14 @@ img.gday {
   width: 113px;
   height: 342px;
   transform: translateY(50%); 
-  background: url(..../image/prev.png) no-repeat;
+  background: url(../image/prev.png) no-repeat;
   left: 19px;
 }
 .next {
   width: 131px;
   height: 339px;
   transform: translateY(50%); 
-  background: url(..../image/next.png) no-repeat;
+  background: url(../image/next.png) no-repeat;
   right: 19px;
 }
 
