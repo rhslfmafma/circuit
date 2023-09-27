@@ -1,28 +1,5 @@
 $(function() {  
-  
-  /* future.html */
-  let mySwipe = new Swiper('.swiper',{
-    direction: 'horizontal',
-    loop:true,     
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl : '.swiper-button-next',
-      prevEl : '.swiper-button-prev',
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-  //로딩애니메이션이 3초간 있다가 바로 콘텐츠가 나오게 하되, 로딩애니메이션은 
-  setTimeout(function(){    
-    $('.Loading_anime').hide();
-    $('.content').show();},
-  3000);  
-
-
-// $.getJSON('파일경로', 할일);  
+  // $.getJSON('파일경로', 할일);  
 let  $allData = [];
 function changeLang(lang){
 $.getJSON(`./data/${lang}.json`, function(data){
@@ -70,6 +47,31 @@ $.getJSON(`./data/${lang}.json`, function(data){
   let target = $(this).attr('data-lang');
   changeLang(target);
   })
+
+
+
+  /* future.html */
+  let mySwipe = new Swiper('.swiper',{
+    direction: 'horizontal',
+    loop:true,     
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl : '.swiper-button-next',
+      prevEl : '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  //로딩애니메이션이 3초간 있다가 바로 콘텐츠가 나오게 하되, 로딩애니메이션은 
+  setTimeout(function(){    
+    $('.Loading_anime').hide();
+    $('.content').show();},
+  3000);  
+
+
 
 
 

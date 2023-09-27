@@ -813,7 +813,7 @@ animation: upjefferey 0.5s;
   }
 
 .txtgroup span {
-  color: #83D214;
+  color: #FFF;
   font-family: Play;
   font-size: 17px;  
   font-weight: 400;
@@ -913,7 +913,8 @@ border-radius: 210px;
 border: 5px solid #fff;
 text-align: center;
 background: #fff;
-margin: 20px auto;
+margin: 0 auto;
+transform: translateY(9px);
 
 }
 footer h3{
