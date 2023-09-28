@@ -55,9 +55,19 @@ $(function() {
     let langskillgroup = $('.langskillgroup');
 
     langskillgroup.click(function(){
+      able_modal_eq0.show();
       able_modal_eq0.css({
         transform: 'translateX(-103%)'
       });
+    });
+
+    $('.accordion-button').click(function(){
+      // 해당 버튼의 부모 요소에서 iframe을 찾음
+      let iframe = $('.modalimg iframe');
+      
+      // iframe의 src 속성을 변경하여 재생
+      let src = $(iframe).attr('src');
+      $(iframe).attr('src', src + '&autoplay=1');
     });
 
 });
