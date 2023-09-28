@@ -50,6 +50,7 @@ $(function() {
 
   let object = $('.object');
   let translateX = 50;
+  let objettxt = $('.objecttxt ')
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
@@ -70,4 +71,21 @@ $(function() {
     console.log(translateX);
     } 
   })
+
+
+  objettxt.eq(0).click(function(){
+    console.log('확인중');
+    speech_bubble.hide();
+    
+  })
+
+
+
+
+
+
+
+
+
+
 });
