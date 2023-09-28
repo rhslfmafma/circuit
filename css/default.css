@@ -739,19 +739,29 @@ font-family: Play;
 
 .able_modal_eq0 {
   position: absolute;
-  margin-left: 1178px;
-     
+  margin-left: 1178px;     
   width: 1016px;
   height: 700px;
   top:9%;
   display: none;
   background: #000;
+  padding: 0px 30px;
+}
 
+.able_modal_eq1 {
+  position: absolute;
+  margin-left: 1178px;     
+  width: 1016px;
+  height: 700px;
+  top:9%;
+  display: none;
+  background: #000;
   padding: 0px 30px;
 }
 
 
-.able_modal_eq0 > h2 {
+.able_modal_eq0 > h2,
+.able_modal_eq1 > h2 {
   color: #fff;
   white-space: nowrap; 
 }
@@ -761,14 +771,19 @@ font-family: Play;
   left:0;
   text-align: center;
   position: relative;
-  background: #D8656C;
   width: 100%;
-  z-index: -1;
-  
-  
+  z-index: -1;   
 }
 
-.able_modal_eq0 .backbtn {
+.able_modal01 {  
+  background: #D8656C;
+}
+.able_modal02 {  
+  background: #107DB5;
+}
+
+.able_modal_eq0 .backbtn,
+.able_modal_eq1 .backbtn {
   position: absolute;
   top:90%;
   left:5%;

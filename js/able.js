@@ -52,7 +52,9 @@ $(function() {
 
 
     let able_modal_eq0 = $('.able_modal_eq0');
+    let able_modal_eq1 = $('.able_modal_eq1');
     let langskillgroup = $('.langskillgroup');
+    let comskillgroup = $('.comskillgroup')
 
     langskillgroup.click(function(){
       able_modal_eq0.show();
@@ -60,8 +62,14 @@ $(function() {
         transform: 'translateX(-103%)'
       });
     });
+    comskillgroup.click(function(){
+      able_modal_eq1.show();
+      able_modal_eq1.css({
+        transform: 'translateX(-103%)'
+      });
+    })
 
-    $('.accordion-button').click(function(){
+    able_modal_eq0.find('.accordion-button').click(function(){
       // 해당 버튼의 부모 요소에서 iframe을 찾음
       let iframe = $('.modalimg iframe');
       
