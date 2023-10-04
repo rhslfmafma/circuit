@@ -91,6 +91,8 @@ $(function() {
             
             speach_bubble.find('p').eq(0).html(tt7);
   
+
+  /* getjson 데이터값 */
   let objecttxttrans = $('.objecttxt');
   objecttxttrans.eq(0).find('div > h3').html(tt8);
   objecttxttrans.eq(0).find('div > p').eq(0).html(tt9);
