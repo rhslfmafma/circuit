@@ -119,8 +119,8 @@ changeLang('kor');
     console.log(e.keyCode);   
       if (e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 39) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
         // 페이지 이동 로직을 여기에 추가                
-          if (currentIdx == 0 ) {
-           $(window).attr('location', '../history.html'); // Corrected this line
+          if (currentIdx == 0 ) {           
+           location.href = "history.html"
           }
         }
       if (e.keyCode == 37) {

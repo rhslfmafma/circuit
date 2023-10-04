@@ -23,7 +23,7 @@
     "title": "Do you want to know more about me?"
   },
   {
-    "title": "다시 생각하시고 알려주세요."
+    "title": "May I introduce myself?"
   },  
   {
     "title": "Okay, let's move on to the INTRO menu!"
@@ -51,5 +51,113 @@
   },
   {
     "title": "Look at your resume with the Arrow key,<br> and hover for more information"    
+  },
+  {
+    "title":"graduate"
+  },
+  {
+    "title":"Seoul Culture High School"
+  },
+  {
+    "title": "2010 - 2012"
+  },
+  {
+    "title": "part-time job"
+  },
+  {
+    "title": "McDonald's Korea"
+  },
+  {
+    "title": "2012.10 - 2012.11"
+  },
+  {
+    "title": "Intern"
+  },
+  {
+    "title": "KOCCA <br> (Korea Creative Content Agency)"
+  },
+  {
+    "title": "2012.11 - 2013.10"
+  },
+  {
+    "title": "Employment"
+  },
+  {
+    "title": "Best Western <br> New Seoul Hotel"
+  },
+  {
+    "title": "2015.02 - 2018.04"
+  },
+  {
+    "title": "abroad"
+  },
+  {
+    "title": "Taiwan Walking Holiday"
+  },
+  {
+    "title": "2018.05 - 2019.05"
+  },
+  {
+    "title": "Employment"
+  },
+  {
+    "title": "unies <br> (Shilla Duty Free Shop Dispatched)"
+  },
+  {
+    "title": "2019.09 - 2020.08"
+  },
+  {
+    "title": "Completion"
+  },
+  {
+    "title": "EZEN Academy <br> Professional multimedia courses"
+  },
+  {
+    "title": "2020.08 - 2021.04"
+  },
+  {
+    "title": "Employment"
+  },
+  {
+    "title": "Korea Remote Lifelong Education Center"
+  },
+  {
+    "title": "2021.03 - 2021.10"
+  },
+  {
+    "title": "Employment"
+  },
+  {
+    "title": "UNDERDOGS corporation"
+  },
+  {
+    "title": "2021.10 - 2023.01"
+  },
+  {
+    "title": "graduate"
+  },
+  {
+    "title": "korea Cyber University"
+  },
+  {
+    "title": "2013.03 - 2022.02"
+  },
+  {
+    "title": "Employment"
+  },
+  {
+    "title": "KELDI <br> (Korea E-Learning Development Institute)"
+  },
+  {
+    "title": "2023.02 - 2023.05"
+  },  
+  {
+    "title": "Completion"
+  },  
+  {
+    "title": "GREEN Academy  <br> Web Developer Course"
+  },
+  {
+    "title": "2023.05 - 2023.10.06"
   }
 ]
