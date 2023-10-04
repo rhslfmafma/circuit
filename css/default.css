@@ -589,9 +589,9 @@ transform: translate(-50%,-50%);
 }
 .object h3 {
   color: #FDFDFD;
-  text-shadow: 5px 5px 0px #000;
+  text-shadow: 2px 2px 0px #000;
   font-family: Roboto;
-  font-size: 60px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 900;
   line-height: 100%; /* 86.49px */

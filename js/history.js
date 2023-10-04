@@ -60,6 +60,27 @@ $(function() {
             let tt41 = $allData[49].title;
             let tt42 = $allData[50].title;
             let tt43 = $allData[51].title;
+            let tt44 = $allData[52].title;
+            let tt45 = $allData[53].title;
+            let tt46 = $allData[54].title;
+            let tt47 = $allData[55].title;
+            let tt48 = $allData[56].title;
+            let tt49 = $allData[57].title;
+            let tt50 = $allData[58].title;
+
+            let ds01 = $allData[52].title;
+            let ds02= $allData[53].title;
+            let ds03 = $allData[54].title;
+            let ds04 = $allData[55].title;
+            let ds05 = $allData[56].title;
+            let ds06 = $allData[57].title;
+            let ds07 = $allData[58].title;
+            let ds08 = $allData[59].title;
+            let ds09 = $allData[60].title;
+            let ds10 = $allData[61].title;       
+            let ds11 = $allData[62].title;
+            let ds12 = $allData[63].title;
+            
        
             
   let speach_bubble = $('.speach_bubble');
@@ -73,51 +94,68 @@ $(function() {
   let objecttxttrans = $('.objecttxt');
   objecttxttrans.eq(0).find('div > h3').html(tt8);
   objecttxttrans.eq(0).find('div > p').eq(0).html(tt9);
-  objecttxttrans.eq(0).find('div > p').eq(1).html(tt10);
+  objecttxttrans.eq(0).find('div > p').eq(1).html(tt10);  
+  objecttxttrans.eq(0).attr('data-description',(ds01));
 
   objecttxttrans.eq(1).find('div > h3').html(tt11);
   objecttxttrans.eq(1).find('div > p').eq(0).html(tt12);
   objecttxttrans.eq(1).find('div > p').eq(1).html(tt13);
+  objecttxttrans.eq(1).attr('data-description',(ds02));
+
 
   objecttxttrans.eq(2).find('div > h3').html(tt14);
   objecttxttrans.eq(2).find('div > p').eq(0).html(tt15);
-  objecttxttrans.eq(2).find('div > p').eq(1).html(tt16);
+  objecttxttrans.eq(2).find('div > p').eq(1).html(tt16);  
+  objecttxttrans.eq(2).attr('data-description',(ds03));
 
   objecttxttrans.eq(3).find('div > h3').html(tt17);
   objecttxttrans.eq(3).find('div > p').eq(0).html(tt18);
   objecttxttrans.eq(3).find('div > p').eq(1).html(tt19);
+  objecttxttrans.eq(3).attr('data-description',(ds04));
 
   objecttxttrans.eq(4).find('div > h3').html(tt20);
   objecttxttrans.eq(4).find('div > p').eq(0).html(tt21);
   objecttxttrans.eq(4).find('div > p').eq(1).html(tt22);
+  objecttxttrans.eq(4).attr('data-description',(ds05));
   
   objecttxttrans.eq(5).find('div > h3').html(tt23);
   objecttxttrans.eq(5).find('div > p').eq(0).html(tt24);
   objecttxttrans.eq(5).find('div > p').eq(1).html(tt25);
+  objecttxttrans.eq(5).attr('data-description',(ds06));
 
   objecttxttrans.eq(6).find('div > h3').html(tt26);
   objecttxttrans.eq(6).find('div > p').eq(0).html(tt27);
   objecttxttrans.eq(6).find('div > p').eq(1).html(tt28);
+  objecttxttrans.eq(6).attr('data-description',(ds07));
+
 
   objecttxttrans.eq(7).find('div > h3').html(tt29);
   objecttxttrans.eq(7).find('div > p').eq(0).html(tt30);
   objecttxttrans.eq(7).find('div > p').eq(1).html(tt31);
+  objecttxttrans.eq(7).attr('data-description',(ds08));
 
   objecttxttrans.eq(8).find('div > h3').html(tt32);
   objecttxttrans.eq(8).find('div > p').eq(0).html(tt33);
   objecttxttrans.eq(8).find('div > p').eq(1).html(tt34);
+  objecttxttrans.eq(8).attr('data-description',(ds09));
+
 
   objecttxttrans.eq(9).find('div > h3').html(tt35);
   objecttxttrans.eq(9).find('div > p').eq(0).html(tt36);
-  objecttxttrans.eq(9).find('div > p').eq(1).html(tt37);
-
+  objecttxttrans.eq(9).find('div > p').eq(1).html(tt37);  
+  objecttxttrans.eq(9).attr('data-description',(ds10));
+  
   objecttxttrans.eq(10).find('div > h3').html(tt38);
   objecttxttrans.eq(10).find('div > p').eq(0).html(tt39);
-  objecttxttrans.eq(10).find('div > p').eq(1).html(tt40);
+  objecttxttrans.eq(10).find('div > p').eq(1).html(tt40);  
+  objecttxttrans.eq(10).attr('data-description',(ds11));
   
   objecttxttrans.eq(11).find('div > h3').html(tt41);
   objecttxttrans.eq(11).find('div > p').eq(0).html(tt42);
-  objecttxttrans.eq(11).find('div > p').eq(1).html(tt43);
+  objecttxttrans.eq(11).find('div > p').eq(1).html(tt43);  
+  objecttxttrans.eq(11).attr('data-description',(ds12));
+  
+
 
 
 
@@ -141,37 +179,38 @@ $(function() {
   let object = $('.object');
   let translateX = 50;
   let objettxt = $('.objecttxt ')
+  let isHovered = false;
   
   $(document).keydown(function(e) {
     console.log(e.keyCode);        
     if (e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 39) { // 39은 왼쪽 방향키
     // 페이지 이동 로직을 여기에 추가    
-
     translateX=translateX-500;
-
     object.css({'transform' : 'translateX(' + translateX + 'px)'});
     console.log(translateX);
-    } 
+    }
     if (e.keyCode == 37) {
+   
     // 페이지 이동 로직을 여기에 추가    
 
     translateX=translateX+500;
 
     object.css({'transform' : 'translateX(' + translateX + 'px)'});
-    console.log(translateX);
-    } 
+    console.log(translateX); 
+  }
   })
 
-  objettxt.hover(function(){    
-  let speach_bubble_txt = $('.speach_bubble').find('p');
-  let data_description = $(this).attr('data-description');
-  speach_bubble_txt.hide();
-  speach_bubble_txt.html(data_description);
-  speach_bubble_txt.show();
-  });
-
-  
-
-
-
+  objettxt.hover(
+    function(){    
+      isHovered = false;
+      let speach_bubble_txt = $('.speach_bubble').find('p');
+      let data_description = $(this).attr('data-description');
+      speach_bubble_txt.hide();
+      speach_bubble_txt.html(data_description);
+      speach_bubble_txt.show();
+    },
+    function() {
+      isHovered = true;
+    }
+  );
 });
