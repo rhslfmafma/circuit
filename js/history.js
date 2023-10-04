@@ -1,10 +1,15 @@
 $(function() {  
-  //로딩애니메이션이 3초간 있다가 바로 콘텐츠가 나오게 하되, 로딩애니메이션은 
-  setTimeout(function(){    
-    $('.Loading_anime').hide();
-    $('.content').show();},
-  3000);  
-
+   //언어버튼 클릭 시 드롭다운 슬라이드 다운
+   let languagebtn = $('.languagebtn');
+   let dropdownMenu = $('.dropdown-menu');    
+       languagebtn.click(function(){
+       dropdownMenu.slideToggle();
+       })       
+   let speach_bubble = $('.intro .speach_bubble ');    
+       speach_bubble.click(function(){
+       $(this).find(p).eq(0).hide();
+       $(this).find(p).eq(1).show();     
+     })
   
 
   // $.getJSON('파일경로', 할일);  

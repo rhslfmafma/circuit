@@ -22,6 +22,7 @@ a{
 .displaygroup {
   width: 1016px !important;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 
@@ -523,7 +524,8 @@ display: none;
   z-index: 99;
 }
 
-.history .dropdowns {
+.history .dropdowns,
+.able .dropdowns {
   color: #fff;
   z-index: 99;
 
@@ -661,6 +663,8 @@ transform: translate(-50%,-50%);
 .able .display > h2 {
   color: #fff;
   padding-top: 20px;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .able div .groups h2 {
@@ -777,6 +781,7 @@ font-family: Play;
   text-align: center;
   transform: translateY(119px);
   font-weight: bold;
+  font-size: 28px;
 }
 .able_modal {
   margin: 0 auto;
