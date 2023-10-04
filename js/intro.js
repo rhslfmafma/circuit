@@ -14,8 +14,37 @@ $(function() {
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
   let spanElements = $('.txtgroup li');
+  console.log(spanElements);
   spanElements.hide();
-  let index = 0;
+  let index = 1;
+
+
+  function changeLang(lang){
+    $.getJSON(`./data/${lang}.json`, function(data){
+              $allData = data;
+              console.log($allData);
+              let menu = $('.nav li');
+
+    for(let i = 0; i<menu.length; i++) {
+      menu.eq(i).find('a').text($allData[0].menu['title'+(i+1)]);
+    }
+
+    //displaypromptred 제목 업데이트
+    let displaypromptred = $('.intro .txtgroup');
+    for(let i = 8; i<=14; i++) {
+    displaypromptred.find('li').eq(i-7).html($allData[i].title);
+    }
+
+
+
+
+});
+}
+
+
+changeLang('kor');
+
+
 
         // 타이핑 애니메이션 실행
         function typeText($element, text) {
@@ -26,58 +55,44 @@ $(function() {
             if (index === text.length) {
               clearInterval(interval);
             }
-          }, 300);
+          }, 100);
         }
 
         function typeNext(index) {
           if (index < spanElements.length) {
             let text = spanElements.eq(index).text();
+            console.log(text);
             spanElements.eq(index).empty();
+            spanElements.eq(index).show();
             typeText(spanElements.eq(index),text);
             index++;
           }
         }
 
-        let typeanimation  = setInterval(() => {
-          spanElements.eq(index).show();
-          typeNext(index);
-          index++;     
-          if (index === spanElements.length) {
-            clearInterval(typeanimation);
-          }
-        }, 250);
-        
- 
+
+        setTimeout(function(){
+
+          let typeanimation  = setInterval(() => {
+     
+            typeNext(index);
+                 
+            if (index === spanElements.length) {
+              clearInterval(typeanimation);
+            }
+            index++;
+          }, 1500);
+          
+
+   
+
+        },100)
+     
+        // typeText(spanElements.eq(1),text);     
+
+
   
-        function changeLang(lang){
-          $.getJSON(`./data/${lang}.json`, function(data){
-                    $allData = data;
-                    console.log($allData);
-                    let menu = $('.nav li');
+  
 
-          for(let i = 0; i<menu.length; i++) {
-            menu.eq(i).find('a').text($allData[0].menu['title'+(i+1)]);
-          }
-
-          //displaypromptred 제목 업데이트
-          let displaypromptred = $('.intro .txtgroup');
-          for(let i = 8; i<=14; i++) {
-          displaypromptred.find('li').eq(i-7).html($allData[i].title);
-          }
-
-      
-        typeNext();
-
-
-        //다음 span 타이핑 시작하기 위한 이벤트리스너
-        spanElements.on('animationEnd webkitAnimationEnd oAnimationEnd MSAnimationEnd', function() {
-          typeNext();
-        });
-      });
-  }
-
-
-  changeLang('kor');
 
 
     

@@ -71,11 +71,11 @@ $(function() {
 
     able_modal_eq0.find('.accordion-button').click(function(){
       // 해당 버튼의 부모 요소에서 iframe을 찾음
-      let iframe = $('.modalimg iframe');
-      
+      let videourl = $(this).attr('data-video');   
+      console.log(videourl);   
+      let iframe = $('.modalimg > iframe');
+      iframe.attr('src', videourl);      
       // iframe의 src 속성을 변경하여 재생
-      let src = $(iframe).attr('src');
-      $(iframe).attr('src', src + '&autoplay=1');
     });
 
 });

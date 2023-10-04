@@ -87,6 +87,7 @@ speach_bubble.click(function(){
     let currentIdx = 0;
     let question_modaltxt = $('.question_modaltxt h3');
     let question_modaltxt_tri = $('.question_modal svg');
+    let intropage = false;
     
 
 
@@ -111,6 +112,10 @@ speach_bubble.click(function(){
     $(document).keydown(function(e) {
       console.log(e.keyCode);   
         if (e.keyCode == 13 || e.keyCode == 32 || e.keyCode == 39) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
+          if (intropage == true) {
+            location.href = "intro.html"
+            console.log(intropage);
+          } 
           // 페이지 이동 로직을 여기에 추가          
             if (!isDisplay01Hidden) {
               display01.hide();
@@ -120,7 +125,7 @@ speach_bubble.click(function(){
               showbubble(currentIdx);
             }
         
-            if (currentIdx < 5) {                    
+            if (currentIdx < 5) {                                               
             showbubble(currentIdx++);
             if (currentIdx == 3 ) {              
               jefferey.show();
@@ -146,10 +151,11 @@ speach_bubble.click(function(){
 
     })
 
-
     question_modaltxt.click(function(){      
     let target = $(this).attr('data-yes');
     if (target == 'yes') {
+      intropage = true;
+      console.log(intropage);
       currentIdx = 6;
       console.log(currentIdx,'yes');
       showbubble(currentIdx);              
@@ -160,5 +166,6 @@ speach_bubble.click(function(){
     }
 
     });
+    console.log(intropage);
 });
 
