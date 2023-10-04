@@ -5,6 +5,7 @@ $(function() {
     $('.content').show();},
   3000);  
 
+  
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -17,11 +18,10 @@ $(function() {
             let mn2 = $allData[0].menu.title2;
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
-
-            let speach_bubble = $('.speach_bubble');
             let tt7 = $allData[15].title;
        
             
+  let speach_bubble = $('.speach_bubble');
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
             menu.eq(2).find('a').text(mn3);
@@ -72,19 +72,15 @@ $(function() {
     } 
   })
 
+  objettxt.hover(function(){    
+  let speach_bubble_txt = $('.speach_bubble').find('p');
+  let data_description = $(this).attr('data-description');
+  speach_bubble_txt.hide();
+  speach_bubble_txt.html(data_description);
+  speach_bubble_txt.show();
+  });
 
-  objettxt.eq(0).click(function(){
-    console.log('확인중');
-    speech_bubble.hide();
-    
-  })
-
-
-
-
-
-
-
+  
 
 
 
