@@ -588,7 +588,7 @@ left: 50%;
 transform: translate(-50%,-50%);
 }
 .object h3 {
-  color: #FDFDFD;
+  color: #fff;
   text-shadow: 2px 2px 0px #000;
   font-family: Roboto;
   font-size: 30px;
@@ -915,7 +915,7 @@ animation: upjefferey 0.5s;
   left: 27px;
 }
 .future .next {
-  right: -21px;
+  right: 9px;
 }
 
 
