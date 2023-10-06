@@ -5,9 +5,6 @@ $(function() {
     $('.content').show();},
   3000);
 
-<<<<<<< HEAD
-  
-=======
   $(document).keydown(function(e) {
     console.log(e.keyCode);   
       if (e.keyCode == 13) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
@@ -183,6 +180,5 @@ speach_bubble.click(function(){
 
     });
     console.log(intropage);
->>>>>>> parent of 5ed69f4 ([ADD] 기능 추가)
 });
 
