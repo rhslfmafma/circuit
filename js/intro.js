@@ -55,7 +55,7 @@ changeLang('kor');
             if (index === text.length) {
               clearInterval(interval);
             }
-          }, 100);
+          }, 50);
         }
 
         function typeNext(index) {
@@ -80,7 +80,7 @@ changeLang('kor');
               clearInterval(typeanimation);
             }
             index++;
-          }, 1500);
+          }, 500);
           
 
    

@@ -12,6 +12,11 @@ body {
 }
 
 
+.hidden {
+  display: none;
+}
+
+
 a{
   color:#fff;
   text-decoration: none; 
@@ -462,6 +467,7 @@ display: none;
   top:30px;
   right:80px;
   cursor: pointer;
+  z-index: 99;
 }
 
 

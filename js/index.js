@@ -158,7 +158,10 @@ speach_bubble.click(function(){
       console.log(intropage);
       currentIdx = 6;
       console.log(currentIdx,'yes');
-      showbubble(currentIdx);              
+      showbubble(currentIdx);  
+      setTimeout(function(){
+        location.href = "intro.html"
+      },2000)            
     } else {
       currentIdx = 5;
       console.log(currentIdx, 'no');
