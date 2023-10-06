@@ -5,6 +5,16 @@ $(function() {
     $('.content').show();},
   3000);
 
+  $(document).keydown(function(e) {
+    console.log(e.keyCode);   
+      if (e.keyCode == 13) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
+       {
+          location.href = "index_main.html"
+          console.log(intropage);
+        } 
+          } 
+        }
+  )
   
   let display01 = $('.display01');
   let display02 = $('.display02');
