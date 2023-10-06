@@ -5,6 +5,14 @@ $(function() {
     $('.content').show();},
   3000);
 
+
+  let storage = localStorage;
+  storage.setItem('language', 'kor');    
+  let currentlang =  storage.getItem('language');
+  changeLang(currentlang);
+  console.log(currentlang);
+  
+
   $(document).keydown(function(e) {
     console.log(e.keyCode);   
       if (e.keyCode == 13) { // 13은 엔터키, 32는 스페이스키, 39는 오른쪽 방향키
@@ -72,9 +80,12 @@ $(function() {
     btn.click(function(){      
     let target = $(this).attr('data-lang');
     changeLang(target);
+    storage.language = target;
     })
 
-   
+
+
+    
     //언어버튼 클릭 시 드롭다운 슬라이드 다운
   let languagebtn = $('.languagebtn');
   let dropdownMenu = $('.dropdown-menu');

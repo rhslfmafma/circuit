@@ -1,5 +1,10 @@
 $(function() {
 
+  let storage = localStorage;
+  let currentlang =  storage.getItem('language');
+  changeLang(currentlang);
+  console.log(currentlang);
+
 
   // $.getJSON('파일경로', 할일);  
   let  $allData = [];
@@ -40,7 +45,7 @@ $(function() {
 
         });
   }
-    changeLang('kor');
+   
 
 
     let btn = $('.lang');
