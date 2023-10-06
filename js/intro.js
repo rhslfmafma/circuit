@@ -1,20 +1,10 @@
 $(function() {  
   //언어버튼 클릭 시 드롭다운 슬라이드 다운
-  
-  let storage = localStorage;
-  let currentlang =  storage.getItem('language');
-  changeLang(currentlang);
-  console.log(currentlang);
-
-
   let languagebtn = $('.languagebtn');
   let dropdownMenu = $('.dropdown-menu');    
       languagebtn.click(function(){
       dropdownMenu.slideToggle();
       })       
-
-
-      
   let speach_bubble = $('.intro .speach_bubble ');    
       speach_bubble.click(function(){
       $(this).find(p).eq(0).hide();
@@ -52,6 +42,7 @@ $(function() {
 }
 
 
+changeLang('kor');
 
 
 

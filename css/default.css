@@ -69,7 +69,6 @@ h1 {
   margin-top: 72px;
   margin: 0 auto;
   background: url(../image/LOGO.png) no-repeat;
-  z-index: 99;
 }
 /*로고 URL 수정 */
 
@@ -669,7 +668,7 @@ transform: translate(-50%,-50%);
 
 .able .display > h2 {
   color: #fff;
-  padding-top: 80px;
+  padding-top: 20px;
   font-weight: bold;
   font-size: 28px;
 }
@@ -695,7 +694,7 @@ font-family: Play;
 
 .able .skillgroups {
   position: absolute;
-  bottom:-25%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -736,9 +735,8 @@ font-family: Play;
 }
 
 
-.modalimg {
-  margin-top: 18px;
-  padding-left: 9px;
+.modalimg > iframe {
+  margin-top: 14%;
 }
 
 
@@ -787,13 +785,13 @@ font-family: Play;
   color: #fff;
   white-space: nowrap; 
   text-align: center;
-  transform: translateY(280%);
+  transform: translateY(119px);
   font-weight: bold;
   font-size: 28px;
 }
 .able_modal {
   margin: 0 auto;
-  top: 16%;
+  top: 50px;
   left:0;
   text-align: center;
   position: relative;
@@ -803,17 +801,17 @@ font-family: Play;
 
 .able_modal01 {  
   background: #D8656C;
-  height: 350px;
+  height: 510px;
 }
 .able_modal02 {  
   background: #107DB5;
-  height: 350px;
+  height: 510px;
 }
 
 .able_modal_eq0 .backbtn,
 .able_modal_eq1 .backbtn {
   position: absolute;
-  bottom:-28%;
+  top:90%;
   left:5%;
   background: url(../image/controller.png) no-repeat;
   width: 300px;
@@ -830,11 +828,10 @@ font-family: Play;
 
 
 .parent_accodion {
-  width: 352px;
-  transform: translate(20px, 16px);
-  overflow-y: scroll;
-  background: #ebebeb;  
-  height: 320px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-left: 10px;
+  margin-top: 80px;
 }
 
 
@@ -908,7 +905,7 @@ animation: upjefferey 0.5s;
   font-size: 17px;  
   font-weight: 400;
   line-height: 40px;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 
