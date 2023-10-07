@@ -812,21 +812,35 @@ font-family: Play;
 .able_modal_eq0 .backbtn,
 .able_modal_eq1 .backbtn {
   position: absolute;
-  bottom:-28%;
+  bottom:50px;
   left:5%;
   background: url(../image/controller.png) no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 54px;
+  height: 54px;
   z-index: -99;
+  filter: brightness(90%);
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.able_modal_eq0 .backbtn:hover,
+.able_modal_eq1 .backbtn:hover {
+  
+  filter: brightness(100%);
 }
 
 .able_modal_eq0 .backbtntxt > a,
 .able_modal_eq1 .backbtntxt > a {
   position: absolute;
-  top: 16px;
-  left: 4%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  display: block;
+  pointer-events: auto;
+  
 }
-
 
 .parent_accodion {
   width: 352px;
@@ -905,7 +919,7 @@ animation: upjefferey 0.5s;
   color: #FFF;
   font-family: Play;
   font-size: 17px;  
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
   white-space: nowrap;
 }

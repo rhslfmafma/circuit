@@ -16,29 +16,28 @@ $(function() {
             let mn3 = $allData[0].menu.title3;
             let mn4 = $allData[0].menu.title4;
 
-            let displayprompt = $('.whitedisplay');
-            let tt1 = $allData[1].title;
-            let tt2 = $allData[2].title;
-            let tt3 = $allData[3].title;
-            console.log(tt1);
+            let displayprompt = $('.display');
+            let able_modal_eq0 = $('.able_modal_eq0');
+            let able_modal_eq1 = $('.able_modal_eq1');
+          
+            let h201 = $allData[64].title;
+            let h202 = $allData[65].title;
+            let h203 = $allData[66].title;
 
-            let tt4 = $allData[4].title;
-            let tt5 = $allData[5].title;
-            let tt6 = $allData[6].title;
+            let h204 = $allData[67].title;
+            let h205 = $allData[68].title;
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
             menu.eq(2).find('a').text(mn3);
             menu.eq(3).find('a').text(mn4);
             
-            displayprompt.eq(0).find('.speach_bubble p').html(tt1);
-            displayprompt.eq(1).find('.speach_bubble p').html(tt2);
-            displayprompt.eq(2).find('.speach_bubble p').html(tt3);
-            displayprompt.eq(3).find('.speach_bubble p').html(tt4);
-            displayprompt.eq(4).find('.speach_bubble p').html(tt5);
-            displayprompt.eq(5).find('.speach_bubble p').html(tt6);
+            displayprompt.find('h2').eq(0).html(h201);
+            displayprompt.find('h2').eq(1).html(h202); 
+            displayprompt.find('h2').eq(2).html(h203); 
             
-
+            able_modal_eq0.find('h2').eq(0).html(h204); 
+            able_modal_eq1.find('h2').eq(0).html(h205); 
 
 
         });
@@ -52,11 +51,19 @@ $(function() {
     let target = $(this).attr('data-lang');
     changeLang(target);
     storage.setItem('language',target); // 선택된 언어를 저장합니다
-    console.log(target);
+    console.log(target);1
 
     })
 
 
+    //언어버튼 클릭 시 드롭다운 슬라이드 다운
+    let languagebtn = $('.languagebtn');
+    let dropdownMenu = $('.dropdown-menu');
+  
+    languagebtn.click(function(){
+      dropdownMenu.slideToggle();
+    })
+  
     let able_modal_eq0 = $('.able_modal_eq0');
     let able_modal_eq1 = $('.able_modal_eq1');
     let langskillgroup = $('.langskillgroup');
