@@ -19,13 +19,15 @@ $(function() {
             let displayprompt = $('.display');
             let able_modal_eq0 = $('.able_modal_eq0');
             let able_modal_eq1 = $('.able_modal_eq1');
-          
+
             let h201 = $allData[64].title;
             let h202 = $allData[65].title;
             let h203 = $allData[66].title;
 
             let h204 = $allData[67].title;
             let h205 = $allData[68].title;
+
+
             
             menu.eq(0).find('a').text(mn1);
             menu.eq(1).find('a').text(mn2);
@@ -34,10 +36,12 @@ $(function() {
             
             displayprompt.find('h2').eq(0).html(h201);
             displayprompt.find('h2').eq(1).html(h202); 
-            displayprompt.find('h2').eq(2).html(h203); 
+            displayprompt.find('h2').eq(2).html(h203);
+
+            able_modal_eq0.find('> h2').html(h204);
+            able_modal_eq1.find('> h2').html(h205);
+
             
-            able_modal_eq0.find('h2').eq(0).html(h204); 
-            able_modal_eq1.find('h2').eq(0).html(h205); 
 
 
         });
