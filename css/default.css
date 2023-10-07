@@ -681,7 +681,7 @@ font-size: 52px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-transform: translateY(30px);
+transform: translateY(-30px);
 }
 
 .able > h2 {
