@@ -1,4 +1,9 @@
 $(function() {  
+  let storage = localStorage;
+  let currentlang =  storage.getItem('language');
+  changeLang(currentlang);
+  console.log(currentlang);
+  
   //로딩애니메이션이 3초간 있다가 바로 콘텐츠가 나오게 하되, 로딩애니메이션은 
   setTimeout(function(){    
     $('.Loading_anime').hide();
@@ -64,7 +69,7 @@ $(function() {
 
         });
   }
-    changeLang('kor');
+
 
 
     let btn = $('.lang');
@@ -72,6 +77,8 @@ $(function() {
     btn.click(function(){      
     let target = $(this).attr('data-lang');
     changeLang(target);
+    currentlang = target;
+    storage.setItem('language',target); // 선택된 언어를 저장합니다
     })
 
    

@@ -1,4 +1,9 @@
 $(function() {  
+  let storage = localStorage;
+  let currentlang =  storage.getItem('language');
+  changeLang(currentlang);
+  console.log(currentlang);
+  
   // $.getJSON('파일경로', 할일);  
 let  $allData = [];
 function changeLang(lang){
@@ -38,7 +43,6 @@ $.getJSON(`./data/${lang}.json`, function(data){
 
       });
 }
-  changeLang('kor');
 
 
   let btn = $('.lang');
@@ -46,6 +50,9 @@ $.getJSON(`./data/${lang}.json`, function(data){
   btn.click(function(){      
   let target = $(this).attr('data-lang');
   changeLang(target);
+  storage.setItem('language',target); // 선택된 언어를 저장합니다
+  console.log(target);
+
   })
 
 
