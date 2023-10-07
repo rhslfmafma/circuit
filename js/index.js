@@ -70,7 +70,7 @@ $(function() {
         });
   }
 
-
+  changeLang('kor'); 
 
     let btn = $('.lang');
     
