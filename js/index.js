@@ -78,7 +78,6 @@ $(function() {
     let target = $(this).attr('data-lang');
     changeLang(target);
     currentlang = target;
-    storage.setItem('language',target); // 선택된 언어를 저장합니다
     })
 
    
