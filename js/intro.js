@@ -64,7 +64,7 @@ $(function() {
 
         function typeNext(index) {
           if (index < spanElements.length) {
-            let text = spanElements.eq(index).html();
+            let text = spanElements.eq(index).text();
             console.log(text);
             spanElements.eq(index).empty();
             spanElements.eq(index).show();
