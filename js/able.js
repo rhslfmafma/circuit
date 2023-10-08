@@ -88,9 +88,27 @@ $(function() {
 
     let isFirstClick = true;
     let index = 0;
-    let accordionbtn = able_modal_eq0.find('.accordion-button');
+    let accordionbtn01 = able_modal_eq0.find('.accordion-button');
+    let accordionbtn02 = able_modal_eq1.find('.accordion-button');
     
-    accordionbtn.each(function(index){
+    accordionbtn01.each(function(index){
+      $(this).click(function(){
+        if (isFirstClick) {
+          // 해당 버튼의 부모 요소에서 iframe을 찾음
+          let videourl = $(this).attr('data-video');   
+          console.log(videourl);   
+          let iframe = $('.modalimg > iframe');
+          iframe.attr('src', videourl);      
+          // iframe의 src 속성을 변경하여 재생
+          
+          isFirstClick = false; // 첫 클릭이후 false로 설정하여 두번째 클릭 때 아코디언만활성화
+          ++index;
+      } else {
+        isFirstClick = true;
+      }
+    });
+  })      
+    accordionbtn02.each(function(index){
       $(this).click(function(){
         if (isFirstClick) {
           // 해당 버튼의 부모 요소에서 iframe을 찾음
